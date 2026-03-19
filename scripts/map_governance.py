@@ -3,6 +3,21 @@
 Map all 2,009 datasets to governance domains and collections (Option C).
 Updates the data_marketplace database with new governance columns.
 Outputs config/governance_mapping.json for Purview/OpenMetadata integration.
+
+IMPORTANT — Platform-specific implementation:
+
+  Purview:
+    - Data Map domains: ONE default domain "Masreph" (max 5 total, used for
+      organizational/legal boundaries — NOT for business classification)
+    - Unified Catalog domains: Our 7 governance domains go HERE (unlimited)
+    - Collections: Our business-line collections go inside the default Data Map domain
+
+  OpenMetadata:
+    - Domains: Our 7 governance domains map directly (with domain_type attribute)
+    - Teams: Our collections map to OM Teams with policies
+    - Data Products: Linked to domains
+
+  Both tools use the SAME governance_mapping.json — just different API targets.
 """
 
 import os
@@ -15,6 +30,10 @@ logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(
 logger = logging.getLogger(__name__)
 
 # ─── DOMAIN MAPPING (Option C: Business-oriented) ───────────────────────────
+#
+# These map to:
+#   - Purview: Unified Catalog domains (NOT Data Map domains)
+#   - OpenMetadata: Domains (with domain_type)
 
 # data_domain → governance_domain
 DOMAIN_MAP = {
@@ -27,6 +46,29 @@ DOMAIN_MAP = {
     "Employee": "People & Organization",
     "Partner": "People & Organization",
     "IT": "Technology & Data",
+}
+
+# OpenMetadata domain types: Source-aligned, Aggregate, Consumer-aligned
+# Purview UC domains don't have types
+DOMAIN_TYPES = {
+    "Customer Management": "Aggregate",       # Curates from multiple source systems
+    "Products & Contracts": "Source-aligned",  # Near transactional systems
+    "Risk & Compliance": "Aggregate",          # Aggregates from screening + scoring systems
+    "Collateral & Assets": "Source-aligned",   # Near ERP/legacy systems
+    "Finance & Reporting": "Consumer-aligned", # End-user reporting and BI
+    "People & Organization": "Aggregate",      # Combines HR + partner systems
+    "Technology & Data": "Source-aligned",      # Digital channels and APIs
+}
+
+# Domain owners
+DOMAIN_OWNERS = {
+    "Customer Management": {"name": "Head of CRM", "email": "crm.lead@masreph.com"},
+    "Products & Contracts": {"name": "Head of Product", "email": "product.lead@masreph.com"},
+    "Risk & Compliance": {"name": "Chief Risk Officer", "email": "cro@masreph.com"},
+    "Collateral & Assets": {"name": "Head of Collateral Mgmt", "email": "collateral.lead@masreph.com"},
+    "Finance & Reporting": {"name": "CFO", "email": "cfo@masreph.com"},
+    "People & Organization": {"name": "CHRO", "email": "chro@masreph.com"},
+    "Technology & Data": {"name": "CTO", "email": "cto@masreph.com"},
 }
 
 # data_subdomain → governance_subdomain
@@ -244,6 +286,23 @@ def main():
 
     mapping = {
         "total_datasets": len(rows),
+        "platform_implementation": {
+            "purview": {
+                "data_map_domain": "Masreph (default domain — ONE only, organizational boundary)",
+                "uc_domains": "Our 7 governance domains → Purview Unified Catalog domains (unlimited)",
+                "collections": "Our 10 collections → Purview Collections inside default Data Map domain (RBAC)",
+                "data_products": "Our data products → Purview UC Data Products",
+                "glossary": "Our glossary terms → Purview UC Glossary",
+                "note": "Data Map domains ≠ UC domains. Max 5 Data Map domains (for org/legal boundaries). UC domains are unlimited (for business classification)."
+            },
+            "openmetadata": {
+                "domains": "Our 7 governance domains → OM Domains (with domain_type: Source-aligned/Aggregate/Consumer-aligned)",
+                "teams": "Our 10 collections → OM Teams with Policies (access control)",
+                "data_products": "Our data products → OM Data Products (linked to domains)",
+                "glossary": "Our glossary terms → OM Glossary with categories",
+                "note": "OM domains are simpler — one concept for business classification. No Data Map vs UC distinction."
+            },
+        },
         "domains": {},
         "collections": {},
         "datasets": [],
@@ -253,11 +312,18 @@ def main():
         d = dict(zip(cols, row))
         mapping["datasets"].append(d)
 
-        # Build domain structure
+        # Build domain structure with type and owner
         dom = d["governance_domain"]
         sub = d["governance_subdomain"]
         if dom not in mapping["domains"]:
-            mapping["domains"][dom] = {"subdomains": {}, "dataset_count": 0}
+            mapping["domains"][dom] = {
+                "subdomains": {},
+                "dataset_count": 0,
+                "domain_type": DOMAIN_TYPES.get(dom, "Aggregate"),
+                "owner": DOMAIN_OWNERS.get(dom, {}),
+                "purview_target": "Unified Catalog domain",
+                "openmetadata_target": "Domain",
+            }
         mapping["domains"][dom]["dataset_count"] += 1
         if sub not in mapping["domains"][dom]["subdomains"]:
             mapping["domains"][dom]["subdomains"][sub] = 0
@@ -267,7 +333,12 @@ def main():
         coll = d["governance_collection"]
         sub_coll = d["governance_sub_collection"]
         if coll not in mapping["collections"]:
-            mapping["collections"][coll] = {"sub_collections": {}, "dataset_count": 0}
+            mapping["collections"][coll] = {
+                "sub_collections": {},
+                "dataset_count": 0,
+                "purview_target": "Collection (inside default Data Map domain 'Masreph')",
+                "openmetadata_target": "Team",
+            }
         mapping["collections"][coll]["dataset_count"] += 1
         if sub_coll not in mapping["collections"][coll]["sub_collections"]:
             mapping["collections"][coll]["sub_collections"][sub_coll] = 0
