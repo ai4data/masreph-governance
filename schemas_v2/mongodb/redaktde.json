@@ -1,0 +1,106 @@
+[
+  {
+    "collection": "docuVerifyFinanceDataset",
+    "database": "redaktde",
+    "description": "This client dataset supports commercial finance operations. Key applications include relationship management, client profitability analysis, business development. The DocuVerify Finance Dataset contai",
+    "validator": {
+      "$jsonSchema": {
+        "bsonType": "object",
+        "required": [
+          "clientId",
+          "masrephPartyId",
+          "clientLegalName",
+          "clientSegmentCode",
+          "relationshipStartDate",
+          "isHighRiskClient",
+          "countryOfDomicile",
+          "euGdprConsentFlag",
+          "verifiedFinancialDocCount",
+          "relationshipStageCode",
+          "masrephGroupClientFlag",
+          "clientLifecycleStatus"
+        ],
+        "properties": {
+          "clientId": {
+            "bsonType": "string"
+          },
+          "masrephPartyId": {
+            "bsonType": "string"
+          },
+          "clientLegalName": {
+            "bsonType": "string"
+          },
+          "clientSegmentCode": {
+            "bsonType": "string"
+          },
+          "primaryRelationshipManagerId": {
+            "bsonType": "string"
+          },
+          "relationshipStartDate": {
+            "bsonType": "date"
+          },
+          "lastInteractionTimestamp": {
+            "bsonType": "date"
+          },
+          "clientProfitability12mAmount": {
+            "bsonType": "double"
+          },
+          "clientRiskRating": {
+            "bsonType": "string"
+          },
+          "isHighRiskClient": {
+            "bsonType": "bool"
+          },
+          "countryOfDomicile": {
+            "bsonType": "string"
+          },
+          "euGdprConsentFlag": {
+            "bsonType": "bool"
+          },
+          "primaryContactEmail": {
+            "bsonType": "string"
+          },
+          "industryClassificationCode": {
+            "bsonType": "string"
+          },
+          "annualTurnoverAmount": {
+            "bsonType": "double"
+          },
+          "verifiedFinancialDocCount": {
+            "bsonType": "int"
+          },
+          "latestVerifiedFinancialDocDate": {
+            "bsonType": "date"
+          },
+          "avgDaysToVerifyDocuments": {
+            "bsonType": "double"
+          },
+          "relationshipStageCode": {
+            "bsonType": "string"
+          },
+          "crossSellOpportunityScore": {
+            "bsonType": "double"
+          },
+          "preferredCommunicationChannel": {
+            "bsonType": "string"
+          },
+          "kycReviewNextDueDate": {
+            "bsonType": "date"
+          },
+          "masrephGroupClientFlag": {
+            "bsonType": "bool"
+          },
+          "clientLifecycleStatus": {
+            "bsonType": "string"
+          },
+          "clientCreditExposureAmount": {
+            "bsonType": "double"
+          },
+          "keyFinancialRatios": {
+            "bsonType": "object"
+          }
+        }
+      }
+    }
+  }
+]

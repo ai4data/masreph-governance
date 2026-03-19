@@ -1,0 +1,167 @@
+[
+  {
+    "collection": "masrephAppRegistry",
+    "database": "masrephappregistry",
+    "description": "This it dataset supports innovation & technology operations. Key applications include data analysis, reporting, business intelligence. The Masreph App Registry dataset contains information on financia",
+    "validator": {
+      "$jsonSchema": {
+        "bsonType": "object",
+        "required": [
+          "registryAppId",
+          "applicationName",
+          "applicationCode",
+          "applicationCategory",
+          "businessOwnerId",
+          "businessOwnerName",
+          "technicalOwnerId",
+          "technicalOwnerName",
+          "hostingRegion",
+          "primaryCountryIso2",
+          "deploymentModel",
+          "regulatoryClassification",
+          "dataClassificationLevel",
+          "storesPiiFlag",
+          "gdprApplicabilityFlag",
+          "customerFacingFlag",
+          "activeFlag",
+          "productionReadyFlag",
+          "currentVersion",
+          "integrationPattern",
+          "primaryDataStoreType",
+          "realTimeStreamingFlag",
+          "slaCriticalityLevel",
+          "lastUpdatedTimestamp",
+          "recordCreatedTimestamp"
+        ],
+        "properties": {
+          "registryAppId": {
+            "bsonType": "string"
+          },
+          "applicationName": {
+            "bsonType": "string"
+          },
+          "applicationCode": {
+            "bsonType": "string"
+          },
+          "applicationCategory": {
+            "bsonType": "string"
+          },
+          "businessOwnerId": {
+            "bsonType": "string"
+          },
+          "businessOwnerName": {
+            "bsonType": "string"
+          },
+          "technicalOwnerId": {
+            "bsonType": "string"
+          },
+          "technicalOwnerName": {
+            "bsonType": "string"
+          },
+          "hostingRegion": {
+            "bsonType": "string"
+          },
+          "primaryCountryIso2": {
+            "bsonType": "string"
+          },
+          "supportedCountries": {
+            "bsonType": "array"
+          },
+          "deploymentModel": {
+            "bsonType": "string"
+          },
+          "regulatoryClassification": {
+            "bsonType": "string"
+          },
+          "dataClassificationLevel": {
+            "bsonType": "string"
+          },
+          "storesPiiFlag": {
+            "bsonType": "bool"
+          },
+          "piiDataTypes": {
+            "bsonType": "string"
+          },
+          "gdprApplicabilityFlag": {
+            "bsonType": "bool"
+          },
+          "customerFacingFlag": {
+            "bsonType": "bool"
+          },
+          "activeFlag": {
+            "bsonType": "bool"
+          },
+          "productionReadyFlag": {
+            "bsonType": "bool"
+          },
+          "goLiveDate": {
+            "bsonType": "date"
+          },
+          "decommissionDate": {
+            "bsonType": "date"
+          },
+          "lastReleaseDate": {
+            "bsonType": "date"
+          },
+          "currentVersion": {
+            "bsonType": "string"
+          },
+          "averageUserRating": {
+            "bsonType": "double"
+          },
+          "totalUserRatingsCount": {
+            "bsonType": "int"
+          },
+          "latestUserReviewText": {
+            "bsonType": "string"
+          },
+          "latestUserReviewTimestamp": {
+            "bsonType": "date"
+          },
+          "integrationPattern": {
+            "bsonType": "string"
+          },
+          "primaryDataStoreType": {
+            "bsonType": "string"
+          },
+          "primaryDatabaseEngine": {
+            "bsonType": "string"
+          },
+          "messagingTechnology": {
+            "bsonType": "string"
+          },
+          "realTimeStreamingFlag": {
+            "bsonType": "bool"
+          },
+          "maxConcurrentUsers": {
+            "bsonType": "int"
+          },
+          "averageDailyTransactions": {
+            "bsonType": "int"
+          },
+          "peakTps": {
+            "bsonType": "double"
+          },
+          "slaCriticalityLevel": {
+            "bsonType": "string"
+          },
+          "supportContactEmail": {
+            "bsonType": "string"
+          },
+          "vendorName": {
+            "bsonType": "string"
+          },
+          "licenseType": {
+            "bsonType": "string"
+          },
+          "lastUpdatedTimestamp": {
+            "bsonType": "date"
+          },
+          "recordCreatedTimestamp": {
+            "bsonType": "date"
+          }
+        }
+      }
+    }
+  }
+]

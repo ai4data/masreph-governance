@@ -1,0 +1,1509 @@
+{
+  "generated_at": "2026-03-18T15:39:41.922728+00:00",
+  "summary": {
+    "total_tables": 603,
+    "tables_with_data": 313,
+    "empty_tables": 290,
+    "empty_pct": 48.1
+  },
+  "platforms": {
+    "sql-server": {
+      "total": 256,
+      "empty": 95,
+      "tables": [
+        {
+          "database": "Masreph_accountlimittracker",
+          "table": "tblCustomer",
+          "columns": 10
+        },
+        {
+          "database": "Masreph_accountlimittracker",
+          "table": "tblLoanFacility",
+          "columns": 10
+        },
+        {
+          "database": "Masreph_accountlimittracker",
+          "table": "tblLoanFacilitySnapshot",
+          "columns": 25
+        },
+        {
+          "database": "Masreph_accountnumber",
+          "table": "tblFinanceAccountSnapshot",
+          "columns": 44
+        },
+        {
+          "database": "Masreph_accountnumber",
+          "table": "tblProduct",
+          "columns": 7
+        },
+        {
+          "database": "Masreph_afadfinancestore",
+          "table": "tblAuthorizedFinanceAgent",
+          "columns": 48
+        },
+        {
+          "database": "Masreph_appello",
+          "table": "Customer",
+          "columns": 11
+        },
+        {
+          "database": "Masreph_appello",
+          "table": "LoanContract",
+          "columns": 9
+        },
+        {
+          "database": "Masreph_appello",
+          "table": "tblLoanAccount",
+          "columns": 20
+        },
+        {
+          "database": "Masreph_appello",
+          "table": "tblLoanRiskProfile",
+          "columns": 14
+        },
+        {
+          "database": "Masreph_calypsox",
+          "table": "tblFinanceRepoInsight",
+          "columns": 35
+        },
+        {
+          "database": "Masreph_calypsoxi",
+          "table": "tblTradeFinanceInsight",
+          "columns": 41
+        },
+        {
+          "database": "Masreph_ccosm",
+          "table": "tblLoanAccount",
+          "columns": 29
+        },
+        {
+          "database": "Masreph_ccosm",
+          "table": "tblFinanceJourneyInsight",
+          "columns": 27
+        },
+        {
+          "database": "Masreph_compliancetransactionservice",
+          "table": "tblCustomerComplianceProfile",
+          "columns": 12
+        },
+        {
+          "database": "Masreph_compliancetransactionservice",
+          "table": "tblLeaseContract",
+          "columns": 8
+        },
+        {
+          "database": "Masreph_compliancetransactionservice",
+          "table": "tblComplianceTransaction",
+          "columns": 32
+        },
+        {
+          "database": "Masreph_corepaymentoperations",
+          "table": "tblSepaTransaction",
+          "columns": 47
+        },
+        {
+          "database": "Masreph_corepaymentoperations",
+          "table": "tblCustomer",
+          "columns": 8
+        },
+        {
+          "database": "Masreph_corepaymentoperations",
+          "table": "tblProduct",
+          "columns": 5
+        },
+        {
+          "database": "Masreph_creditdatafinance",
+          "table": "tblLoanAccount",
+          "columns": 29
+        },
+        {
+          "database": "Masreph_creditdatafinance",
+          "table": "tblLoanAccountSnapshot",
+          "columns": 20
+        },
+        {
+          "database": "Masreph_crossborderpaymentoperations",
+          "table": "tblCustomer",
+          "columns": 6
+        },
+        {
+          "database": "Masreph_crossborderpaymentoperations",
+          "table": "tblPayment",
+          "columns": 46
+        },
+        {
+          "database": "Masreph_dfmstore",
+          "table": "tblFinanceBehaviouralInsight",
+          "columns": 27
+        },
+        {
+          "database": "Masreph_dfmstore",
+          "table": "tblCoBorrower",
+          "columns": 12
+        },
+        {
+          "database": "Masreph_dfmstore",
+          "table": "tblCoBorrowerRating",
+          "columns": 40
+        },
+        {
+          "database": "Masreph_financeadvisornetworksystem",
+          "table": "tblClient",
+          "columns": 14
+        },
+        {
+          "database": "Masreph_financeadvisornetworksystem",
+          "table": "tblMortgageConsent",
+          "columns": 26
+        },
+        {
+          "database": "Masreph_financeadvisornetworksystem",
+          "table": "tblMortgageApplication",
+          "columns": 25
+        },
+        {
+          "database": "Masreph_financenetwork",
+          "table": "TblClient",
+          "columns": 23
+        },
+        {
+          "database": "Masreph_financenetwork",
+          "table": "TblClientRelationship",
+          "columns": 27
+        },
+        {
+          "database": "Masreph_financenetworkservice",
+          "table": "tblClient",
+          "columns": 21
+        },
+        {
+          "database": "Masreph_financenetworkservice",
+          "table": "tblRelationship",
+          "columns": 31
+        },
+        {
+          "database": "Masreph_financeprospectid",
+          "table": "tblClient",
+          "columns": 12
+        },
+        {
+          "database": "Masreph_financeprospectid",
+          "table": "tblClientWealthProfile",
+          "columns": 29
+        },
+        {
+          "database": "Masreph_financeprospectid",
+          "table": "tblClientContactPreference",
+          "columns": 15
+        },
+        {
+          "database": "Masreph_financeprospectid",
+          "table": "tblClientContactConsent",
+          "columns": 5
+        },
+        {
+          "database": "Masreph_financeprospectid",
+          "table": "tblProspectLifecycle",
+          "columns": 8
+        },
+        {
+          "database": "Masreph_finfluxcredit",
+          "table": "tblCollateral",
+          "columns": 39
+        },
+        {
+          "database": "Masreph_finfluxcredit",
+          "table": "tblCollateralDocument",
+          "columns": 4
+        },
+        {
+          "database": "Masreph_finfluxcredit",
+          "table": "tblCustomer",
+          "columns": 8
+        },
+        {
+          "database": "Masreph_finfluxcredit",
+          "table": "tblLeaseContract",
+          "columns": 32
+        },
+        {
+          "database": "Masreph_finfluxcredit",
+          "table": "tblLeasePaymentStatus",
+          "columns": 10
+        },
+        {
+          "database": "Masreph_finfluxcredit",
+          "table": "tblLeaseRiskProfile",
+          "columns": 14
+        },
+        {
+          "database": "Masreph_finfluxcredit",
+          "table": "tblCollateralValuation",
+          "columns": 6
+        },
+        {
+          "database": "Masreph_finfluxcredit",
+          "table": "tblProduct",
+          "columns": 6
+        },
+        {
+          "database": "Masreph_finfluxcredit",
+          "table": "tblCollateralRisk",
+          "columns": 7
+        },
+        {
+          "database": "Masreph_finfluxcredit",
+          "table": "tblCreditAgreement",
+          "columns": 36
+        },
+        {
+          "database": "Masreph_finhub",
+          "table": "tblClient",
+          "columns": 12
+        },
+        {
+          "database": "Masreph_insuredatafinancecatalog",
+          "table": "Customer",
+          "columns": 19
+        },
+        {
+          "database": "Masreph_insuredatafinancecatalog",
+          "table": "CustomerSegment",
+          "columns": 5
+        },
+        {
+          "database": "Masreph_insuredatafinancecatalog",
+          "table": "tblCustomerConsent",
+          "columns": 9
+        },
+        {
+          "database": "Masreph_insuredatafinancecatalog",
+          "table": "tblCustomerEngagement",
+          "columns": 20
+        },
+        {
+          "database": "Masreph_insuredatafinancecatalog",
+          "table": "tblCustomerRiskProfitability",
+          "columns": 10
+        },
+        {
+          "database": "Masreph_masrephproductcontractregistry",
+          "table": "tblCustomer",
+          "columns": 9
+        },
+        {
+          "database": "Masreph_masrephproductcontractregistry",
+          "table": "tblFinancialProduct",
+          "columns": 50
+        },
+        {
+          "database": "Masreph_moderncorepayments",
+          "table": "tblClientContactPreference",
+          "columns": 10
+        },
+        {
+          "database": "Masreph_mortgagefinancecalculator",
+          "table": "tblMortgageCalculation",
+          "columns": 26
+        },
+        {
+          "database": "Masreph_paymenttracker",
+          "table": "tblPaymentProgress",
+          "columns": 32
+        },
+        {
+          "database": "Masreph_realestate",
+          "table": "tblMortgageApplicant",
+          "columns": 19
+        },
+        {
+          "database": "Masreph_realestate",
+          "table": "tblMortgageApplication",
+          "columns": 31
+        },
+        {
+          "database": "Masreph_realestate",
+          "table": "AssetPledge",
+          "columns": 16
+        },
+        {
+          "database": "Masreph_realestate",
+          "table": "tblAssetValuation",
+          "columns": 15
+        },
+        {
+          "database": "Masreph_realestate",
+          "table": "tblCollateralInsurance",
+          "columns": 6
+        },
+        {
+          "database": "Masreph_realestatesqlserver",
+          "table": "tblMortgageApplicant",
+          "columns": 22
+        },
+        {
+          "database": "Masreph_realestatesqlserver",
+          "table": "tblMortgageApplication",
+          "columns": 25
+        },
+        {
+          "database": "Masreph_riskwatchfinance",
+          "table": "TblCustomer",
+          "columns": 6
+        },
+        {
+          "database": "Masreph_riskwatchfinance",
+          "table": "TblLoanApplication",
+          "columns": 9
+        },
+        {
+          "database": "Masreph_riskwatchfinance",
+          "table": "TblLoan",
+          "columns": 22
+        },
+        {
+          "database": "Masreph_riskwatchfinance",
+          "table": "TblLoanRiskAssessment",
+          "columns": 16
+        },
+        {
+          "database": "Masreph_riskwatchfinance",
+          "table": "TblLoanCollateral",
+          "columns": 5
+        },
+        {
+          "database": "Masreph_riskwatchfinance",
+          "table": "TblLoanStatus",
+          "columns": 10
+        },
+        {
+          "database": "Masreph_securefinance",
+          "table": "TblClient",
+          "columns": 32
+        },
+        {
+          "database": "Masreph_securefinance",
+          "table": "TblClientCommunication",
+          "columns": 17
+        },
+        {
+          "database": "Masreph_sepamandateverification",
+          "table": "tblSepaPaymentRule",
+          "columns": 52
+        },
+        {
+          "database": "Masreph_streamlinepayments",
+          "table": "tblFinanceAuthorization",
+          "columns": 40
+        },
+        {
+          "database": "Masreph_transactfinance",
+          "table": "TblClientPersonaSnapshot",
+          "columns": 26
+        },
+        {
+          "database": "Masreph_transactfinance",
+          "table": "tblClientLegalEntity",
+          "columns": 16
+        },
+        {
+          "database": "Masreph_transactfinance",
+          "table": "tblCustomer",
+          "columns": 19
+        },
+        {
+          "database": "Masreph_transactfinance",
+          "table": "tblDepositAccount",
+          "columns": 15
+        },
+        {
+          "database": "Masreph_transactfinance",
+          "table": "WealthDepositInsightsSnapshot",
+          "columns": 26
+        },
+        {
+          "database": "Masreph_transactfinance",
+          "table": "tblFinanceNetworkEdge",
+          "columns": 21
+        },
+        {
+          "database": "Masreph_transactfinance",
+          "table": "tblCorporateCustomer",
+          "columns": 12
+        },
+        {
+          "database": "Masreph_transactfinance",
+          "table": "tblLeasingProduct",
+          "columns": 5
+        },
+        {
+          "database": "Masreph_transactfinance",
+          "table": "tblCorporateDeposit",
+          "columns": 36
+        },
+        {
+          "database": "Masreph_transactfinance",
+          "table": "tblClientPersona",
+          "columns": 18
+        },
+        {
+          "database": "Masreph_transactfinance",
+          "table": "tblClientPersonaRiskExposure",
+          "columns": 9
+        },
+        {
+          "database": "Masreph_transactfinance",
+          "table": "tblClientPersonaContact",
+          "columns": 10
+        },
+        {
+          "database": "Masreph_transactfinance",
+          "table": "tblClientPersonaAnalytics",
+          "columns": 7
+        },
+        {
+          "database": "Masreph_transactfinance",
+          "table": "tblFinancePersona",
+          "columns": 51
+        },
+        {
+          "database": "Masreph_transactfinance",
+          "table": "tblPropertyFinanceRecord",
+          "columns": 15
+        },
+        {
+          "database": "Masreph_transactfinance",
+          "table": "tblFinanceAccount",
+          "columns": 32
+        },
+        {
+          "database": "Masreph_transactfinance",
+          "table": "TblClientCore",
+          "columns": 21
+        },
+        {
+          "database": "Masreph_wenmasrephstore",
+          "table": "tblClientFinanceStatementSnapshot",
+          "columns": 38
+        }
+      ]
+    },
+    "postgresql": {
+      "total": 194,
+      "empty": 110,
+      "tables": [
+        {
+          "schema": "alvaria",
+          "table": "dialogues",
+          "columns": 39
+        },
+        {
+          "schema": "alvaria",
+          "table": "finance_dialogues",
+          "columns": 43
+        },
+        {
+          "schema": "alvaria_crm",
+          "table": "dialogues",
+          "columns": 40
+        },
+        {
+          "schema": "connect",
+          "table": "employees",
+          "columns": 9
+        },
+        {
+          "schema": "connect",
+          "table": "finance_learning_catalog_entries",
+          "columns": 10
+        },
+        {
+          "schema": "connect",
+          "table": "finance_learning_enrollments",
+          "columns": 12
+        },
+        {
+          "schema": "connect",
+          "table": "learning_resources",
+          "columns": 26
+        },
+        {
+          "schema": "core_contact_repository",
+          "table": "client_consents",
+          "columns": 6
+        },
+        {
+          "schema": "core_contact_repository",
+          "table": "client_contact_details",
+          "columns": 6
+        },
+        {
+          "schema": "core_contact_repository",
+          "table": "client_contact_preferences",
+          "columns": 13
+        },
+        {
+          "schema": "core_contact_repository",
+          "table": "client_digital_profiles",
+          "columns": 6
+        },
+        {
+          "schema": "core_contact_repository",
+          "table": "client_engagement_metrics",
+          "columns": 9
+        },
+        {
+          "schema": "core_contact_repository",
+          "table": "client_leasing_summaries",
+          "columns": 9
+        },
+        {
+          "schema": "core_contact_repository",
+          "table": "client_marketing_consents",
+          "columns": 7
+        },
+        {
+          "schema": "core_contact_repository",
+          "table": "client_professional_profiles",
+          "columns": 5
+        },
+        {
+          "schema": "core_contact_repository",
+          "table": "client_risk_and_value_metrics",
+          "columns": 13
+        },
+        {
+          "schema": "core_contact_repository",
+          "table": "client_risk_profiles",
+          "columns": 6
+        },
+        {
+          "schema": "core_contact_repository",
+          "table": "clients",
+          "columns": 48
+        },
+        {
+          "schema": "core_contact_repository",
+          "table": "corporate_client_insights",
+          "columns": 40
+        },
+        {
+          "schema": "core_contact_repository",
+          "table": "corporate_finance_relationships",
+          "columns": 20
+        },
+        {
+          "schema": "core_contact_repository",
+          "table": "customer_financial_metrics",
+          "columns": 15
+        },
+        {
+          "schema": "core_contact_repository",
+          "table": "customer_note_tags",
+          "columns": 5
+        },
+        {
+          "schema": "core_contact_repository",
+          "table": "customer_segments",
+          "columns": 5
+        },
+        {
+          "schema": "core_contact_repository",
+          "table": "customers",
+          "columns": 24
+        },
+        {
+          "schema": "core_contact_repository",
+          "table": "finance_persona_data",
+          "columns": 42
+        },
+        {
+          "schema": "core_contact_repository",
+          "table": "personal_finance_profiles",
+          "columns": 28
+        },
+        {
+          "schema": "customer_care",
+          "table": "client_mobility_snapshots",
+          "columns": 32
+        },
+        {
+          "schema": "customer_care",
+          "table": "corporate_finance_records_archive",
+          "columns": 52
+        },
+        {
+          "schema": "customer_care",
+          "table": "finance_record_archive",
+          "columns": 46
+        },
+        {
+          "schema": "customer_care",
+          "table": "wealth_record_archive_dataset",
+          "columns": 48
+        },
+        {
+          "schema": "global_credit_store",
+          "table": "industries",
+          "columns": 4
+        },
+        {
+          "schema": "global_credit_store",
+          "table": "lease_statuses",
+          "columns": 4
+        },
+        {
+          "schema": "global_credit_store",
+          "table": "leases",
+          "columns": 46
+        },
+        {
+          "schema": "global_credit_store",
+          "table": "lessee_customers",
+          "columns": 7
+        },
+        {
+          "schema": "global_credit_store",
+          "table": "products",
+          "columns": 5
+        },
+        {
+          "schema": "microsoft_dynamics_365",
+          "table": "branches",
+          "columns": 5
+        },
+        {
+          "schema": "microsoft_dynamics_365",
+          "table": "client_consents",
+          "columns": 5
+        },
+        {
+          "schema": "microsoft_dynamics_365",
+          "table": "client_engagement_metrics",
+          "columns": 6
+        },
+        {
+          "schema": "microsoft_dynamics_365",
+          "table": "client_financial_profiles",
+          "columns": 11
+        },
+        {
+          "schema": "microsoft_dynamics_365",
+          "table": "client_insight_finance_dataset",
+          "columns": 52
+        },
+        {
+          "schema": "microsoft_dynamics_365",
+          "table": "client_insights",
+          "columns": 16
+        },
+        {
+          "schema": "microsoft_dynamics_365",
+          "table": "client_tags",
+          "columns": 5
+        },
+        {
+          "schema": "microsoft_dynamics_365",
+          "table": "clients",
+          "columns": 19
+        },
+        {
+          "schema": "microsoft_dynamics_365",
+          "table": "customer_segments",
+          "columns": 5
+        },
+        {
+          "schema": "microsoft_dynamics_365",
+          "table": "finance_crm_clients",
+          "columns": 37
+        },
+        {
+          "schema": "microsoft_dynamics_365",
+          "table": "finance_crm_insights",
+          "columns": 36
+        },
+        {
+          "schema": "microsoft_dynamics_365",
+          "table": "income_bands",
+          "columns": 4
+        },
+        {
+          "schema": "microsoft_dynamics_365",
+          "table": "property_loan_accounts",
+          "columns": 15
+        },
+        {
+          "schema": "microsoft_dynamics_365",
+          "table": "relationship_managers",
+          "columns": 5
+        },
+        {
+          "schema": "microsoft_dynamics_365",
+          "table": "risk_ratings",
+          "columns": 4
+        },
+        {
+          "schema": "microsoft_dynamics_365_crm",
+          "table": "client_segments",
+          "columns": 5
+        },
+        {
+          "schema": "microsoft_dynamics_365_crm",
+          "table": "clients",
+          "columns": 31
+        },
+        {
+          "schema": "microsoft_dynamics_365_crm",
+          "table": "industry_sectors",
+          "columns": 5
+        },
+        {
+          "schema": "none",
+          "table": "client_segments",
+          "columns": 5
+        },
+        {
+          "schema": "none",
+          "table": "retail_client_analytics",
+          "columns": 8
+        },
+        {
+          "schema": "none",
+          "table": "retail_client_complaint_stats",
+          "columns": 6
+        },
+        {
+          "schema": "none",
+          "table": "retail_client_consents",
+          "columns": 8
+        },
+        {
+          "schema": "none",
+          "table": "retail_client_contact_stats",
+          "columns": 7
+        },
+        {
+          "schema": "none",
+          "table": "retail_client_financials",
+          "columns": 11
+        },
+        {
+          "schema": "none",
+          "table": "retail_client_marketing_preferences",
+          "columns": 7
+        },
+        {
+          "schema": "none",
+          "table": "retail_client_risk_kyc",
+          "columns": 6
+        },
+        {
+          "schema": "none",
+          "table": "retail_clients",
+          "columns": 19
+        },
+        {
+          "schema": "postgresql_global_credit_store",
+          "table": "booking_branches",
+          "columns": 4
+        },
+        {
+          "schema": "postgresql_global_credit_store",
+          "table": "borrowers",
+          "columns": 8
+        },
+        {
+          "schema": "postgresql_global_credit_store",
+          "table": "collateral_asset_charges",
+          "columns": 5
+        },
+        {
+          "schema": "postgresql_global_credit_store",
+          "table": "collateral_exposures",
+          "columns": 25
+        },
+        {
+          "schema": "postgresql_global_credit_store",
+          "table": "collateral_valuations",
+          "columns": 10
+        },
+        {
+          "schema": "postgresql_global_credit_store",
+          "table": "collaterals",
+          "columns": 12
+        },
+        {
+          "schema": "postgresql_global_credit_store",
+          "table": "credit_exposure_snapshots",
+          "columns": 34
+        },
+        {
+          "schema": "postgresql_global_credit_store",
+          "table": "credit_finance_agreements",
+          "columns": 40
+        },
+        {
+          "schema": "postgresql_global_credit_store",
+          "table": "credit_finance_offerings",
+          "columns": 42
+        },
+        {
+          "schema": "postgresql_global_credit_store",
+          "table": "credit_risk_rating_early_warning_indicators",
+          "columns": 5
+        },
+        {
+          "schema": "postgresql_global_credit_store",
+          "table": "credit_risk_ratings",
+          "columns": 28
+        },
+        {
+          "schema": "postgresql_global_credit_store",
+          "table": "creditshield_finance_records",
+          "columns": 16
+        },
+        {
+          "schema": "postgresql_global_credit_store",
+          "table": "customer_segments",
+          "columns": 4
+        },
+        {
+          "schema": "postgresql_global_credit_store",
+          "table": "facilities",
+          "columns": 10
+        },
+        {
+          "schema": "postgresql_global_credit_store",
+          "table": "industry_sectors",
+          "columns": 4
+        },
+        {
+          "schema": "postgresql_global_credit_store",
+          "table": "lease_contracts",
+          "columns": 13
+        },
+        {
+          "schema": "postgresql_global_credit_store",
+          "table": "leased_assets",
+          "columns": 7
+        },
+        {
+          "schema": "postgresql_global_credit_store",
+          "table": "leases",
+          "columns": 35
+        },
+        {
+          "schema": "postgresql_global_credit_store",
+          "table": "leasing_contracts",
+          "columns": 15
+        },
+        {
+          "schema": "postgresql_global_credit_store",
+          "table": "leasing_credit_exposures",
+          "columns": 43
+        },
+        {
+          "schema": "postgresql_global_credit_store",
+          "table": "operational_risk_events",
+          "columns": 6
+        },
+        {
+          "schema": "postgresql_global_credit_store",
+          "table": "origination_officers",
+          "columns": 4
+        },
+        {
+          "schema": "postgresql_global_credit_store",
+          "table": "product_types",
+          "columns": 4
+        },
+        {
+          "schema": "postgresql_global_credit_store",
+          "table": "risk_finance_data_set",
+          "columns": 49
+        },
+        {
+          "schema": "postgresql_global_credit_store",
+          "table": "risk_finance_records",
+          "columns": 25
+        },
+        {
+          "schema": "postgresql_global_credit_store",
+          "table": "source_systems",
+          "columns": 4
+        },
+        {
+          "schema": "profile_app",
+          "table": "creditrisk_finance_dataset",
+          "columns": 44
+        },
+        {
+          "schema": "profile_app",
+          "table": "finance_profile_consents",
+          "columns": 7
+        },
+        {
+          "schema": "profile_app",
+          "table": "finance_profile_financials",
+          "columns": 13
+        },
+        {
+          "schema": "profile_app",
+          "table": "finance_profile_relationship_metrics",
+          "columns": 8
+        },
+        {
+          "schema": "profile_app",
+          "table": "finance_profile_risk_metrics",
+          "columns": 8
+        },
+        {
+          "schema": "salesforce_customer_insights",
+          "table": "client_churn_and_offers",
+          "columns": 7
+        },
+        {
+          "schema": "salesforce_customer_insights",
+          "table": "client_consents",
+          "columns": 6
+        },
+        {
+          "schema": "salesforce_customer_insights",
+          "table": "client_contact_preferences",
+          "columns": 9
+        },
+        {
+          "schema": "salesforce_customer_insights",
+          "table": "client_crm_states",
+          "columns": 13
+        },
+        {
+          "schema": "salesforce_customer_insights",
+          "table": "client_cross_sell_insights",
+          "columns": 8
+        },
+        {
+          "schema": "salesforce_customer_insights",
+          "table": "client_financial_summaries",
+          "columns": 13
+        },
+        {
+          "schema": "salesforce_customer_insights",
+          "table": "client_kyc_risk_assessments",
+          "columns": 7
+        },
+        {
+          "schema": "salesforce_customer_insights",
+          "table": "client_mobility_engagements",
+          "columns": 8
+        },
+        {
+          "schema": "salesforce_customer_insights",
+          "table": "clients",
+          "columns": 18
+        },
+        {
+          "schema": "salesforce_customer_insights",
+          "table": "finance_activity_logs",
+          "columns": 39
+        },
+        {
+          "schema": "salesforce_customer_insights",
+          "table": "industries",
+          "columns": 4
+        },
+        {
+          "schema": "salesforce_customer_insights",
+          "table": "lead_analytics",
+          "columns": 14
+        },
+        {
+          "schema": "salesforce_customer_insights",
+          "table": "lead_engagement_metrics",
+          "columns": 6
+        },
+        {
+          "schema": "salesforce_customer_insights",
+          "table": "leads",
+          "columns": 28
+        },
+        {
+          "schema": "salesforce_customer_insights",
+          "table": "persons",
+          "columns": 13
+        },
+        {
+          "schema": "sf_crm_a",
+          "table": "clearing_firm_clients",
+          "columns": 46
+        },
+        {
+          "schema": "sf_crm_a",
+          "table": "clearing_firm_data_insights",
+          "columns": 44
+        }
+      ]
+    },
+    "mysql": {
+      "total": 39,
+      "empty": 26,
+      "tables": [
+        {
+          "database": "masreph_american_office_systems",
+          "table": "advice_cost_process_data",
+          "columns": 27
+        },
+        {
+          "database": "masreph_docuverify",
+          "table": "docuverify_finance_dataset",
+          "columns": 35
+        },
+        {
+          "database": "masreph_duocircle",
+          "table": "client_email_feedback_dataset",
+          "columns": 21
+        },
+        {
+          "database": "masreph_email_analytics",
+          "table": "finance_email_analytics",
+          "columns": 41
+        },
+        {
+          "database": "masreph_epos_now",
+          "table": "cashflow_at_schiphol_finance_dataset",
+          "columns": 44
+        },
+        {
+          "database": "masreph_it_digital",
+          "table": "service",
+          "columns": 44
+        },
+        {
+          "database": "masreph_marketing_dwh",
+          "table": "finance_segmentation_insights",
+          "columns": 35
+        },
+        {
+          "database": "masreph_masreph_email_analytics",
+          "table": "email_analytics_record",
+          "columns": 45
+        },
+        {
+          "database": "masreph_masreph_web_mobile_message_store",
+          "table": "client",
+          "columns": 13
+        },
+        {
+          "database": "masreph_masreph_web_mobile_message_store",
+          "table": "secure_message_analytic",
+          "columns": 32
+        },
+        {
+          "database": "masreph_microacquire",
+          "table": "trade_finance_collateral_dataset",
+          "columns": 49
+        },
+        {
+          "database": "masreph_microacquire_digital",
+          "table": "collateral",
+          "columns": 48
+        },
+        {
+          "database": "masreph_ms_office",
+          "table": "finance_call_insights",
+          "columns": 46
+        },
+        {
+          "database": "masreph_none",
+          "table": "settlement_event",
+          "columns": 20
+        },
+        {
+          "database": "masreph_pandadoc",
+          "table": "bundle_finance_data",
+          "columns": 48
+        },
+        {
+          "database": "masreph_pandadoc_digital",
+          "table": "bundle_finance_product",
+          "columns": 23
+        },
+        {
+          "database": "masreph_processmaker",
+          "table": "commercial_finance_forms",
+          "columns": 38
+        },
+        {
+          "database": "masreph_processmaker",
+          "table": "consumer_finance_forms_dataset",
+          "columns": 18
+        },
+        {
+          "database": "masreph_sendgrid",
+          "table": "finance_email_analytics",
+          "columns": 32
+        },
+        {
+          "database": "masreph_startsida",
+          "table": "customer_finance_data",
+          "columns": 31
+        },
+        {
+          "database": "masreph_startsida",
+          "table": "customer_info_finance",
+          "columns": 40
+        },
+        {
+          "database": "masreph_wati",
+          "table": "digital_finance_messages",
+          "columns": 14
+        },
+        {
+          "database": "masreph_wati_digital",
+          "table": "digital_finance_message",
+          "columns": 13
+        },
+        {
+          "database": "masreph_web_mobile_message_store",
+          "table": "secure_message_analytics",
+          "columns": 49
+        },
+        {
+          "database": "masreph_whispe",
+          "table": "call_interaction",
+          "columns": 16
+        },
+        {
+          "database": "masreph_whispe_speech_recognition",
+          "table": "call_insight_finance_dataset",
+          "columns": 26
+        }
+      ],
+      "host_used": "windows_mysql_cli"
+    },
+    "snowflake": {
+      "total": 34,
+      "empty": 23,
+      "tables": [
+        {
+          "schema": "ACTICO",
+          "table": "CREDIT_RISK_DATASET",
+          "columns": 9
+        },
+        {
+          "schema": "ACTICO",
+          "table": "FINANCEPROVISION_INSIGHTS",
+          "columns": 45
+        },
+        {
+          "schema": "ACTICO",
+          "table": "FINANCE_DEFAULT_INSIGHTS",
+          "columns": 49
+        },
+        {
+          "schema": "ACTICO",
+          "table": "RISKWATCH_FINANCE_DATASET",
+          "columns": 53
+        },
+        {
+          "schema": "COMPLIANCE_ARCHIVE",
+          "table": "CLIENT_FILE_ARCHIVE",
+          "columns": 29
+        },
+        {
+          "schema": "CRC_SYSTEMS",
+          "table": "FINANCE_PORTFOLIO_CONTRACTS",
+          "columns": 52
+        },
+        {
+          "schema": "CREDIT_RISK_CONTROLS",
+          "table": "CREDIT_PAYMENT_AGREEMENTS_DATASET",
+          "columns": 55
+        },
+        {
+          "schema": "CREDIT_RISK_INSIGHTS",
+          "table": "CREDIT_RISK_INSIGHTS_DATASET",
+          "columns": 47
+        },
+        {
+          "schema": "ENDORSEMENT_EVALUATIO_APPLICATION",
+          "table": "CREDITRISK_ANALYTICS_DATASET",
+          "columns": 37
+        },
+        {
+          "schema": "ENDORSEMENT_EVALUATIO_APPLICATION",
+          "table": "CREDITRISK_FINANCE_DATASET",
+          "columns": 38
+        },
+        {
+          "schema": "ENDORSEMENT_EVALUATIO_APPLICATION",
+          "table": "CREDIT_RISK_ANALYTICS_DATASET",
+          "columns": 9
+        },
+        {
+          "schema": "ESRB_RATINGS",
+          "table": "QUOTAFLEX_FINANCE_DATASET",
+          "columns": 49
+        },
+        {
+          "schema": "ESRB_RATINGS",
+          "table": "QUOTAFLEX_FINANCE_TERMS",
+          "columns": 31
+        },
+        {
+          "schema": "EUROCOMPLY",
+          "table": "EUROCOMPLY_FINANCE_FILTER",
+          "columns": 53
+        },
+        {
+          "schema": "EUROCOMPLY",
+          "table": "EUROWIRE_COMPLIANCE_DATA",
+          "columns": 51
+        },
+        {
+          "schema": "JUMIO_RISK_SIGNALS",
+          "table": "CREDIT_RISK_INSIGHTS_DATASET",
+          "columns": 47
+        },
+        {
+          "schema": "RACCENT",
+          "table": "FINANCE_CONTACT_INFORMATION_DATASET",
+          "columns": 41
+        },
+        {
+          "schema": "RACCENT",
+          "table": "FORBEARANCE_FINANCE_DATA_SET",
+          "columns": 40
+        },
+        {
+          "schema": "RACCENT",
+          "table": "PARTNER_FINANCE_DISTRIBUTION_DATA",
+          "columns": 54
+        },
+        {
+          "schema": "RISKCONNECT",
+          "table": "RISKCONNECT_FINANCE_DATASET",
+          "columns": 45
+        },
+        {
+          "schema": "SANCTION_SCANNER",
+          "table": "FINANCE_ENTITY_RISK_ANALYSIS",
+          "columns": 9
+        },
+        {
+          "schema": "SANCTION_SCANNER",
+          "table": "RISKFLOW_FINANCE_DATASET",
+          "columns": 49
+        },
+        {
+          "schema": "TRULIOO",
+          "table": "SINGAPORE_FINANCIAL_CRIME_DATASET",
+          "columns": 58
+        }
+      ]
+    },
+    "oracle": {
+      "total": 17,
+      "empty": 0,
+      "tables": []
+    },
+    "mongodb": {
+      "total": 4,
+      "empty": 0,
+      "tables": []
+    },
+    "databricks": {
+      "total": 33,
+      "empty": 21,
+      "tables": [
+        {
+          "schema": "actico",
+          "table": "credit_risk_finance_dataset",
+          "columns": 42
+        },
+        {
+          "schema": "actico",
+          "table": "financeprovision_insights",
+          "columns": 43
+        },
+        {
+          "schema": "afad_finance_store",
+          "table": "authorized_finance_agents_dataset",
+          "columns": 45
+        },
+        {
+          "schema": "compliance_transaction_service",
+          "table": "compliance_transaction_filter_dataset",
+          "columns": 50
+        },
+        {
+          "schema": "core_contact_repository",
+          "table": "finance_persona_data",
+          "columns": 51
+        },
+        {
+          "schema": "credit_finance_service",
+          "table": "credit_risk_ratings_dataset_",
+          "columns": 50
+        },
+        {
+          "schema": "dataedo_crdm",
+          "table": "finance_segmentation_table",
+          "columns": 42
+        },
+        {
+          "schema": "esrb_ratings",
+          "table": "quotaflex_finance_terms",
+          "columns": 41
+        },
+        {
+          "schema": "eventstream",
+          "table": "finance360_customer_journey",
+          "columns": 52
+        },
+        {
+          "schema": "famal_cc_ai",
+          "table": "credit_finance_onboarding_dataset",
+          "columns": 39
+        },
+        {
+          "schema": "ids_ii",
+          "table": "non_contact_finance_registry",
+          "columns": 45
+        },
+        {
+          "schema": "memverge",
+          "table": "privclientfindata",
+          "columns": 51
+        },
+        {
+          "schema": "microsoft_dynamics_365",
+          "table": "finance_crm_insights",
+          "columns": 44
+        },
+        {
+          "schema": "mosaic_tech",
+          "table": "finance_exposure_data",
+          "columns": 45
+        },
+        {
+          "schema": "salesforce_customer_insights",
+          "table": "finance_review_tracker",
+          "columns": 52
+        },
+        {
+          "schema": "salesforce_customer_insights",
+          "table": "propensity_cube_leads_dataset_",
+          "columns": 39
+        },
+        {
+          "schema": "salesforce_customer_insights",
+          "table": "revmax_finance_dataset",
+          "columns": 44
+        },
+        {
+          "schema": "salesforce_customer_insights",
+          "table": "revtrack_finance_data",
+          "columns": 53
+        },
+        {
+          "schema": "salesforce_customer_insights",
+          "table": "trade_finance_crm_data",
+          "columns": 52
+        },
+        {
+          "schema": "trulioo_nl",
+          "table": "finance_crime_detection_dataset",
+          "columns": 53
+        },
+        {
+          "schema": "unknown",
+          "table": "finance_data_analysis_dataset",
+          "columns": 47
+        }
+      ]
+    },
+    "fabric": {
+      "total": 26,
+      "empty": 15,
+      "tables": [
+        {
+          "schema": "beyondtrust",
+          "table": "SecureFinanceAccessDatasetSFAD",
+          "columns": 23
+        },
+        {
+          "schema": "bluedolphin",
+          "table": "FinanceCapModelData",
+          "columns": 50
+        },
+        {
+          "schema": "bmc",
+          "table": "LegalFinanceArchiveDataset",
+          "columns": 47
+        },
+        {
+          "schema": "dataedocrdm",
+          "table": "FeeFinanceClassificationDataset",
+          "columns": 51
+        },
+        {
+          "schema": "dataedocrdm",
+          "table": "FeeFinanceDataset",
+          "columns": 46
+        },
+        {
+          "schema": "dataedocrdm",
+          "table": "FinanceRelationshipCategories",
+          "columns": 43
+        },
+        {
+          "schema": "dataedocrdm",
+          "table": "FinanceRollupOverview",
+          "columns": 38
+        },
+        {
+          "schema": "dataedocrdm",
+          "table": "InterestMappingDataset",
+          "columns": 52
+        },
+        {
+          "schema": "dataedocrdm",
+          "table": "LiquidityFinanceContractsDataset",
+          "columns": 41
+        },
+        {
+          "schema": "dataedocrdm",
+          "table": "RateClassificationDataset",
+          "columns": 48
+        },
+        {
+          "schema": "hoc",
+          "table": "RiskFinanceInsightsDataset",
+          "columns": 29
+        },
+        {
+          "schema": "hrworkforcestore",
+          "table": "MasrephWorkforceInsights",
+          "columns": 50
+        },
+        {
+          "schema": "qualys",
+          "table": "RiskclassificationdataABL",
+          "columns": 53
+        },
+        {
+          "schema": "talentpool",
+          "table": "NLFinanceTalentPool",
+          "columns": 49
+        },
+        {
+          "schema": "talentpool",
+          "table": "NetherlandsFinancePersonnelData",
+          "columns": 30
+        }
+      ]
+    }
+  },
+  "errors": {}
+}

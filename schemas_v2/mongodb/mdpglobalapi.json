@@ -1,0 +1,207 @@
+[
+  {
+    "collection": "mortgageFinanceProfile",
+    "database": "mdpglobalapi",
+    "description": "This client dataset supports consumer finance operations. Key applications include relationship management, client profitability analysis, business development. The Mortgage Finance Profile dataset pr",
+    "validator": {
+      "$jsonSchema": {
+        "bsonType": "object",
+        "required": [
+          "clientMortgageProfileId",
+          "masrephClientId",
+          "primaryMortgageAccountId",
+          "clientSegmentCode",
+          "clientRiskBand",
+          "primaryCountryOfResidence",
+          "clientResidencyStatus",
+          "mortgageOriginationDate",
+          "currentOutstandingMortgageBalance",
+          "originalMortgageAmount",
+          "originalLoanToValueRatio",
+          "applicantPrimaryCreditScore",
+          "applicantCreditScoreSource",
+          "debtToIncomeRatio",
+          "grossMonthlyIncomeAmount",
+          "employmentStatusCode",
+          "interestRateType",
+          "currentInterestRate",
+          "productCode",
+          "mortgageCurrencyCode",
+          "paymentFrequencyCode",
+          "monthlyMortgageInstallmentAmount",
+          "daysPastDue",
+          "delinquencyStatusCode",
+          "numberOfPaidInstallments",
+          "mortgageStatusCode",
+          "eligibleForRefinancingOfferFlag",
+          "gdprConsentMarketingFlag",
+          "mortgagePropertyCountryCode",
+          "clientAgeAtOrigination",
+          "mortgageCollateralTypeCode",
+          "lastProfileUpdateTimestamp"
+        ],
+        "properties": {
+          "clientMortgageProfileId": {
+            "bsonType": "string"
+          },
+          "masrephClientId": {
+            "bsonType": "string"
+          },
+          "externalCrmClientId": {
+            "bsonType": "string"
+          },
+          "primaryMortgageAccountId": {
+            "bsonType": "string"
+          },
+          "clientSegmentCode": {
+            "bsonType": "string"
+          },
+          "clientRiskBand": {
+            "bsonType": "string"
+          },
+          "clientProfitabilityTier": {
+            "bsonType": "string"
+          },
+          "primaryCountryOfResidence": {
+            "bsonType": "string"
+          },
+          "clientResidencyStatus": {
+            "bsonType": "string"
+          },
+          "mortgageOriginationDate": {
+            "bsonType": "date"
+          },
+          "mortgageMaturityDate": {
+            "bsonType": "date"
+          },
+          "currentOutstandingMortgageBalance": {
+            "bsonType": "double"
+          },
+          "originalMortgageAmount": {
+            "bsonType": "double"
+          },
+          "propertyCurrentValuationAmount": {
+            "bsonType": "double"
+          },
+          "currentLoanToValueRatio": {
+            "bsonType": "double"
+          },
+          "originalLoanToValueRatio": {
+            "bsonType": "double"
+          },
+          "applicantPrimaryCreditScore": {
+            "bsonType": "int"
+          },
+          "applicantCreditScoreSource": {
+            "bsonType": "string"
+          },
+          "latestCreditScore": {
+            "bsonType": "int"
+          },
+          "latestCreditScoreDate": {
+            "bsonType": "date"
+          },
+          "debtToIncomeRatio": {
+            "bsonType": "double"
+          },
+          "grossMonthlyIncomeAmount": {
+            "bsonType": "double"
+          },
+          "employmentStatusCode": {
+            "bsonType": "string"
+          },
+          "interestRateType": {
+            "bsonType": "string"
+          },
+          "currentInterestRate": {
+            "bsonType": "double"
+          },
+          "productCode": {
+            "bsonType": "string"
+          },
+          "mortgageCurrencyCode": {
+            "bsonType": "string"
+          },
+          "paymentFrequencyCode": {
+            "bsonType": "string"
+          },
+          "nextPaymentDueDate": {
+            "bsonType": "date"
+          },
+          "monthlyMortgageInstallmentAmount": {
+            "bsonType": "double"
+          },
+          "daysPastDue": {
+            "bsonType": "int"
+          },
+          "delinquencyStatusCode": {
+            "bsonType": "string"
+          },
+          "numberOfPaidInstallments": {
+            "bsonType": "int"
+          },
+          "numberOfRemainingInstallments": {
+            "bsonType": "int"
+          },
+          "mortgageStatusCode": {
+            "bsonType": "string"
+          },
+          "relationshipManagerId": {
+            "bsonType": "string"
+          },
+          "relationshipTenureMonths": {
+            "bsonType": "int"
+          },
+          "clientTotalRelationshipRevenue12m": {
+            "bsonType": "double"
+          },
+          "clientTotalRelationshipCost12m": {
+            "bsonType": "double"
+          },
+          "clientNetProfit12m": {
+            "bsonType": "double"
+          },
+          "crossSellProductHoldingCount": {
+            "bsonType": "int"
+          },
+          "eligibleForRefinancingOfferFlag": {
+            "bsonType": "bool"
+          },
+          "gdprConsentMarketingFlag": {
+            "bsonType": "bool"
+          },
+          "lastMarketingContactTimestamp": {
+            "bsonType": "date"
+          },
+          "preferredContactChannel": {
+            "bsonType": "string"
+          },
+          "mortgagePropertyPostalCode": {
+            "bsonType": "string"
+          },
+          "mortgagePropertyCountryCode": {
+            "bsonType": "string"
+          },
+          "clientAgeAtOrigination": {
+            "bsonType": "int"
+          },
+          "householdSizeAtOrigination": {
+            "bsonType": "int"
+          },
+          "clientLanguagePreferenceCode": {
+            "bsonType": "string"
+          },
+          "associatedProductCodes": {
+            "bsonType": "array"
+          },
+          "mortgageCollateralTypeCode": {
+            "bsonType": "string"
+          },
+          "lastProfileUpdateTimestamp": {
+            "bsonType": "date"
+          }
+        }
+      }
+    }
+  }
+]

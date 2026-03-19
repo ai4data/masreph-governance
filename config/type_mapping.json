@@ -1,0 +1,178 @@
+{
+  "sql-server": {
+    "string": "NVARCHAR(255)",
+    "integer": "INT",
+    "decimal": "DECIMAL(18,4)",
+    "boolean": "BIT",
+    "date": "DATE",
+    "timestamp": "DATETIME2",
+    "array": "NVARCHAR(MAX)",
+    "object": "NVARCHAR(MAX)",
+    "format_overrides": {
+      "uuid": "UNIQUEIDENTIFIER",
+      "email": "NVARCHAR(320)",
+      "url": "NVARCHAR(2048)",
+      "ip_address": "NVARCHAR(45)",
+      "phone": "NVARCHAR(30)",
+      "currency_code": "NCHAR(3)",
+      "country_code": "NCHAR(2)",
+      "iban": "NVARCHAR(34)",
+      "swift": "NVARCHAR(11)",
+      "percentage": "DECIMAL(5,2)"
+    }
+  },
+  "postgresql": {
+    "string": "VARCHAR(255)",
+    "integer": "INTEGER",
+    "decimal": "NUMERIC(18,4)",
+    "boolean": "BOOLEAN",
+    "date": "DATE",
+    "timestamp": "TIMESTAMPTZ",
+    "array": "JSONB",
+    "object": "JSONB",
+    "format_overrides": {
+      "uuid": "UUID",
+      "email": "VARCHAR(320)",
+      "url": "TEXT",
+      "ip_address": "INET",
+      "phone": "VARCHAR(30)",
+      "currency_code": "CHAR(3)",
+      "country_code": "CHAR(2)",
+      "iban": "VARCHAR(34)",
+      "swift": "VARCHAR(11)",
+      "percentage": "NUMERIC(5,2)"
+    }
+  },
+  "mysql": {
+    "string": "VARCHAR(255)",
+    "integer": "INT",
+    "decimal": "DECIMAL(18,4)",
+    "boolean": "TINYINT(1)",
+    "date": "DATE",
+    "timestamp": "DATETIME",
+    "array": "JSON",
+    "object": "JSON",
+    "format_overrides": {
+      "uuid": "CHAR(36)",
+      "email": "VARCHAR(320)",
+      "url": "TEXT",
+      "ip_address": "VARCHAR(45)",
+      "phone": "VARCHAR(30)",
+      "currency_code": "CHAR(3)",
+      "country_code": "CHAR(2)",
+      "iban": "VARCHAR(34)",
+      "swift": "VARCHAR(11)",
+      "percentage": "DECIMAL(5,2)"
+    }
+  },
+  "snowflake": {
+    "string": "VARCHAR(255)",
+    "integer": "NUMBER(18,0)",
+    "decimal": "NUMBER(18,4)",
+    "boolean": "BOOLEAN",
+    "date": "DATE",
+    "timestamp": "TIMESTAMP_NTZ",
+    "array": "VARIANT",
+    "object": "VARIANT",
+    "format_overrides": {
+      "uuid": "VARCHAR(36)",
+      "email": "VARCHAR(320)",
+      "url": "VARCHAR(2048)",
+      "ip_address": "VARCHAR(45)",
+      "phone": "VARCHAR(30)",
+      "currency_code": "VARCHAR(3)",
+      "country_code": "VARCHAR(2)",
+      "iban": "VARCHAR(34)",
+      "swift": "VARCHAR(11)",
+      "percentage": "NUMBER(5,2)"
+    }
+  },
+  "databricks": {
+    "string": "STRING",
+    "integer": "INT",
+    "decimal": "DECIMAL(18,4)",
+    "boolean": "BOOLEAN",
+    "date": "DATE",
+    "timestamp": "TIMESTAMP",
+    "array": "ARRAY<STRING>",
+    "object": "MAP<STRING, STRING>",
+    "format_overrides": {
+      "uuid": "STRING",
+      "email": "STRING",
+      "url": "STRING",
+      "ip_address": "STRING",
+      "phone": "STRING",
+      "currency_code": "STRING",
+      "country_code": "STRING",
+      "iban": "STRING",
+      "swift": "STRING",
+      "percentage": "DECIMAL(5,2)"
+    }
+  },
+  "fabric": {
+    "string": "VARCHAR(255)",
+    "integer": "INT",
+    "decimal": "DECIMAL(18,4)",
+    "boolean": "BIT",
+    "date": "DATE",
+    "timestamp": "DATETIME2",
+    "array": "VARCHAR(MAX)",
+    "object": "VARCHAR(MAX)",
+    "format_overrides": {
+      "uuid": "UNIQUEIDENTIFIER",
+      "email": "VARCHAR(320)",
+      "url": "VARCHAR(2048)",
+      "ip_address": "VARCHAR(45)",
+      "phone": "VARCHAR(30)",
+      "currency_code": "CHAR(3)",
+      "country_code": "CHAR(2)",
+      "iban": "VARCHAR(34)",
+      "swift": "VARCHAR(11)",
+      "percentage": "DECIMAL(5,2)"
+    }
+  },
+  "oracle": {
+    "string": "VARCHAR2(255)",
+    "integer": "NUMBER(18,0)",
+    "decimal": "NUMBER(18,4)",
+    "boolean": "NUMBER(1)",
+    "date": "DATE",
+    "timestamp": "TIMESTAMP",
+    "array": "CLOB",
+    "object": "CLOB",
+    "format_overrides": {
+      "uuid": "RAW(16)",
+      "email": "VARCHAR2(320)",
+      "url": "VARCHAR2(2048)",
+      "ip_address": "VARCHAR2(45)",
+      "phone": "VARCHAR2(30)",
+      "currency_code": "CHAR(3)",
+      "country_code": "CHAR(2)",
+      "iban": "VARCHAR2(34)",
+      "swift": "VARCHAR2(11)",
+      "percentage": "NUMBER(5,2)"
+    }
+  },
+  "mongodb": {
+    "string": "string",
+    "integer": "int",
+    "decimal": "double",
+    "boolean": "bool",
+    "date": "date",
+    "timestamp": "date",
+    "array": "array",
+    "object": "object",
+    "format_overrides": {
+      "uuid": "string",
+      "email": "string",
+      "url": "string",
+      "ip_address": "string",
+      "phone": "string",
+      "currency_code": "string",
+      "country_code": "string",
+      "iban": "string",
+      "swift": "string",
+      "percentage": "double"
+    }
+  }
+}

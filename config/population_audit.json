@@ -1,0 +1,1442 @@
+{
+  "generated_at": "2026-03-19T10:07:21.400353+00:00",
+  "summary": {
+    "total_tables": 271,
+    "tables_with_data": 271,
+    "empty_tables": 0,
+    "total_rows": 48458,
+    "populated_pct": 100.0
+  },
+  "platforms": {
+    "sql-server": {
+      "total_tables": 0,
+      "tables_with_data": 0,
+      "empty_tables": 0,
+      "total_rows": 0,
+      "populated": [],
+      "empty": []
+    },
+    "postgresql": {
+      "total_tables": 194,
+      "tables_with_data": 194,
+      "empty_tables": 0,
+      "total_rows": 28866,
+      "populated": [
+        {
+          "schema": "alvaria",
+          "table": "clients",
+          "rows": 246
+        },
+        {
+          "schema": "alvaria",
+          "table": "dialogues",
+          "rows": 226
+        },
+        {
+          "schema": "alvaria",
+          "table": "finance_dialogues",
+          "rows": 229
+        },
+        {
+          "schema": "alvaria",
+          "table": "issues",
+          "rows": 184
+        },
+        {
+          "schema": "alvaria",
+          "table": "products",
+          "rows": 241
+        },
+        {
+          "schema": "alvaria",
+          "table": "relationship_managers",
+          "rows": 160
+        },
+        {
+          "schema": "alvaria_crm",
+          "table": "clients",
+          "rows": 220
+        },
+        {
+          "schema": "alvaria_crm",
+          "table": "dialogues",
+          "rows": 442
+        },
+        {
+          "schema": "alvaria_crm",
+          "table": "issues",
+          "rows": 195
+        },
+        {
+          "schema": "alvaria_crm",
+          "table": "products",
+          "rows": 233
+        },
+        {
+          "schema": "connect",
+          "table": "employees",
+          "rows": 60
+        },
+        {
+          "schema": "connect",
+          "table": "finance_learning_catalog_entries",
+          "rows": 291
+        },
+        {
+          "schema": "connect",
+          "table": "finance_learning_enrollments",
+          "rows": 156
+        },
+        {
+          "schema": "connect",
+          "table": "learning_paths",
+          "rows": 171
+        },
+        {
+          "schema": "connect",
+          "table": "learning_providers",
+          "rows": 179
+        },
+        {
+          "schema": "connect",
+          "table": "learning_resources",
+          "rows": 1
+        },
+        {
+          "schema": "core_contact_repository",
+          "table": "client_consents",
+          "rows": 147
+        },
+        {
+          "schema": "core_contact_repository",
+          "table": "client_contact_details",
+          "rows": 198
+        },
+        {
+          "schema": "core_contact_repository",
+          "table": "client_contact_preferences",
+          "rows": 35
+        },
+        {
+          "schema": "core_contact_repository",
+          "table": "client_digital_profiles",
+          "rows": 182
+        },
+        {
+          "schema": "core_contact_repository",
+          "table": "client_engagement_metrics",
+          "rows": 127
+        },
+        {
+          "schema": "core_contact_repository",
+          "table": "client_leasing_summaries",
+          "rows": 136
+        },
+        {
+          "schema": "core_contact_repository",
+          "table": "client_marketing_consents",
+          "rows": 148
+        },
+        {
+          "schema": "core_contact_repository",
+          "table": "client_personas",
+          "rows": 330
+        },
+        {
+          "schema": "core_contact_repository",
+          "table": "client_professional_profiles",
+          "rows": 105
+        },
+        {
+          "schema": "core_contact_repository",
+          "table": "client_risk_and_value_metrics",
+          "rows": 167
+        },
+        {
+          "schema": "core_contact_repository",
+          "table": "client_risk_profiles",
+          "rows": 142
+        },
+        {
+          "schema": "core_contact_repository",
+          "table": "clients",
+          "rows": 120
+        },
+        {
+          "schema": "core_contact_repository",
+          "table": "corporate_client_insights",
+          "rows": 221
+        },
+        {
+          "schema": "core_contact_repository",
+          "table": "corporate_finance_relationships",
+          "rows": 60
+        },
+        {
+          "schema": "core_contact_repository",
+          "table": "customer_financial_metrics",
+          "rows": 87
+        },
+        {
+          "schema": "core_contact_repository",
+          "table": "customer_note_tags",
+          "rows": 135
+        },
+        {
+          "schema": "core_contact_repository",
+          "table": "customer_segments",
+          "rows": 273
+        },
+        {
+          "schema": "core_contact_repository",
+          "table": "customers",
+          "rows": 111
+        },
+        {
+          "schema": "core_contact_repository",
+          "table": "finance_persona_data",
+          "rows": 169
+        },
+        {
+          "schema": "core_contact_repository",
+          "table": "finance_personas",
+          "rows": 302
+        },
+        {
+          "schema": "core_contact_repository",
+          "table": "financial_partners",
+          "rows": 54
+        },
+        {
+          "schema": "core_contact_repository",
+          "table": "industry_sectors",
+          "rows": 1
+        },
+        {
+          "schema": "core_contact_repository",
+          "table": "personal_finance_profiles",
+          "rows": 94
+        },
+        {
+          "schema": "core_contact_repository",
+          "table": "relationship_managers",
+          "rows": 167
+        },
+        {
+          "schema": "core_contact_repository",
+          "table": "relationship_product_portfolios",
+          "rows": 147
+        },
+        {
+          "schema": "customer_care",
+          "table": "client_mobility_snapshots",
+          "rows": 188
+        },
+        {
+          "schema": "customer_care",
+          "table": "clients",
+          "rows": 232
+        },
+        {
+          "schema": "customer_care",
+          "table": "corporate_finance_records_archive",
+          "rows": 124
+        },
+        {
+          "schema": "customer_care",
+          "table": "finance_record_archive",
+          "rows": 90
+        },
+        {
+          "schema": "customer_care",
+          "table": "private_finance_clients",
+          "rows": 331
+        },
+        {
+          "schema": "customer_care",
+          "table": "relationship_managers",
+          "rows": 168
+        },
+        {
+          "schema": "customer_care",
+          "table": "wealth_record_archive_dataset",
+          "rows": 106
+        },
+        {
+          "schema": "global_credit_store",
+          "table": "asset_types",
+          "rows": 42
+        },
+        {
+          "schema": "global_credit_store",
+          "table": "branches",
+          "rows": 117
+        },
+        {
+          "schema": "global_credit_store",
+          "table": "countries",
+          "rows": 163
+        },
+        {
+          "schema": "global_credit_store",
+          "table": "currencies",
+          "rows": 70
+        },
+        {
+          "schema": "global_credit_store",
+          "table": "industries",
+          "rows": 105
+        },
+        {
+          "schema": "global_credit_store",
+          "table": "lease_statuses",
+          "rows": 42
+        },
+        {
+          "schema": "global_credit_store",
+          "table": "leases",
+          "rows": 144
+        },
+        {
+          "schema": "global_credit_store",
+          "table": "lessee_customers",
+          "rows": 157
+        },
+        {
+          "schema": "global_credit_store",
+          "table": "masreph_entities",
+          "rows": 65
+        },
+        {
+          "schema": "global_credit_store",
+          "table": "origination_channels",
+          "rows": 36
+        },
+        {
+          "schema": "global_credit_store",
+          "table": "payment_frequencies",
+          "rows": 585
+        },
+        {
+          "schema": "global_credit_store",
+          "table": "portfolio_segments",
+          "rows": 29
+        },
+        {
+          "schema": "global_credit_store",
+          "table": "products",
+          "rows": 133
+        },
+        {
+          "schema": "global_credit_store",
+          "table": "salespersons",
+          "rows": 267
+        },
+        {
+          "schema": "global_credit_store",
+          "table": "source_systems",
+          "rows": 151
+        },
+        {
+          "schema": "microsoft_dynamics_365",
+          "table": "branches",
+          "rows": 188
+        },
+        {
+          "schema": "microsoft_dynamics_365",
+          "table": "client_consents",
+          "rows": 153
+        },
+        {
+          "schema": "microsoft_dynamics_365",
+          "table": "client_engagement_metrics",
+          "rows": 114
+        },
+        {
+          "schema": "microsoft_dynamics_365",
+          "table": "client_financial_profiles",
+          "rows": 176
+        },
+        {
+          "schema": "microsoft_dynamics_365",
+          "table": "client_insight_finance_dataset",
+          "rows": 143
+        },
+        {
+          "schema": "microsoft_dynamics_365",
+          "table": "client_insights",
+          "rows": 232
+        },
+        {
+          "schema": "microsoft_dynamics_365",
+          "table": "client_segments",
+          "rows": 24
+        },
+        {
+          "schema": "microsoft_dynamics_365",
+          "table": "client_tags",
+          "rows": 260
+        },
+        {
+          "schema": "microsoft_dynamics_365",
+          "table": "clients",
+          "rows": 263
+        },
+        {
+          "schema": "microsoft_dynamics_365",
+          "table": "customer_segments",
+          "rows": 135
+        },
+        {
+          "schema": "microsoft_dynamics_365",
+          "table": "finance_crm_clients",
+          "rows": 249
+        },
+        {
+          "schema": "microsoft_dynamics_365",
+          "table": "finance_crm_insights",
+          "rows": 100
+        },
+        {
+          "schema": "microsoft_dynamics_365",
+          "table": "households",
+          "rows": 128
+        },
+        {
+          "schema": "microsoft_dynamics_365",
+          "table": "income_bands",
+          "rows": 175
+        },
+        {
+          "schema": "microsoft_dynamics_365",
+          "table": "property_loan_accounts",
+          "rows": 232
+        },
+        {
+          "schema": "microsoft_dynamics_365",
+          "table": "relationship_managers",
+          "rows": 188
+        },
+        {
+          "schema": "microsoft_dynamics_365",
+          "table": "risk_ratings",
+          "rows": 100
+        },
+        {
+          "schema": "microsoft_dynamics_365_crm",
+          "table": "client_segments",
+          "rows": 125
+        },
+        {
+          "schema": "microsoft_dynamics_365_crm",
+          "table": "clients",
+          "rows": 292
+        },
+        {
+          "schema": "microsoft_dynamics_365_crm",
+          "table": "industry_sectors",
+          "rows": 182
+        },
+        {
+          "schema": "microsoft_dynamics_365_crm",
+          "table": "relationship_managers",
+          "rows": 53
+        },
+        {
+          "schema": "none",
+          "table": "client_segments",
+          "rows": 256
+        },
+        {
+          "schema": "none",
+          "table": "retail_client_analytics",
+          "rows": 109
+        },
+        {
+          "schema": "none",
+          "table": "retail_client_complaint_stats",
+          "rows": 91
+        },
+        {
+          "schema": "none",
+          "table": "retail_client_consents",
+          "rows": 99
+        },
+        {
+          "schema": "none",
+          "table": "retail_client_contact_stats",
+          "rows": 140
+        },
+        {
+          "schema": "none",
+          "table": "retail_client_financials",
+          "rows": 131
+        },
+        {
+          "schema": "none",
+          "table": "retail_client_marketing_preferences",
+          "rows": 38
+        },
+        {
+          "schema": "none",
+          "table": "retail_client_risk_kyc",
+          "rows": 152
+        },
+        {
+          "schema": "none",
+          "table": "retail_clients",
+          "rows": 250
+        },
+        {
+          "schema": "postgresql_global_credit_store",
+          "table": "agreement_statuses",
+          "rows": 4
+        },
+        {
+          "schema": "postgresql_global_credit_store",
+          "table": "agreement_types",
+          "rows": 4
+        },
+        {
+          "schema": "postgresql_global_credit_store",
+          "table": "amortization_types",
+          "rows": 4
+        },
+        {
+          "schema": "postgresql_global_credit_store",
+          "table": "asia_pac_regions",
+          "rows": 125
+        },
+        {
+          "schema": "postgresql_global_credit_store",
+          "table": "asset_categories",
+          "rows": 189
+        },
+        {
+          "schema": "postgresql_global_credit_store",
+          "table": "asset_types",
+          "rows": 16
+        },
+        {
+          "schema": "postgresql_global_credit_store",
+          "table": "booking_branches",
+          "rows": 150
+        },
+        {
+          "schema": "postgresql_global_credit_store",
+          "table": "booking_entities",
+          "rows": 69
+        },
+        {
+          "schema": "postgresql_global_credit_store",
+          "table": "borrowers",
+          "rows": 54
+        },
+        {
+          "schema": "postgresql_global_credit_store",
+          "table": "branches",
+          "rows": 181
+        },
+        {
+          "schema": "postgresql_global_credit_store",
+          "table": "channels",
+          "rows": 31
+        },
+        {
+          "schema": "postgresql_global_credit_store",
+          "table": "collateral_asset_charges",
+          "rows": 111
+        },
+        {
+          "schema": "postgresql_global_credit_store",
+          "table": "collateral_assets",
+          "rows": 97
+        },
+        {
+          "schema": "postgresql_global_credit_store",
+          "table": "collateral_exposures",
+          "rows": 93
+        },
+        {
+          "schema": "postgresql_global_credit_store",
+          "table": "collateral_types",
+          "rows": 49
+        },
+        {
+          "schema": "postgresql_global_credit_store",
+          "table": "collateral_valuations",
+          "rows": 183
+        },
+        {
+          "schema": "postgresql_global_credit_store",
+          "table": "collaterals",
+          "rows": 53
+        },
+        {
+          "schema": "postgresql_global_credit_store",
+          "table": "counterparties",
+          "rows": 104
+        },
+        {
+          "schema": "postgresql_global_credit_store",
+          "table": "counterparty_regions",
+          "rows": 83
+        },
+        {
+          "schema": "postgresql_global_credit_store",
+          "table": "countries",
+          "rows": 15
+        },
+        {
+          "schema": "postgresql_global_credit_store",
+          "table": "credit_exposure_snapshots",
+          "rows": 119
+        },
+        {
+          "schema": "postgresql_global_credit_store",
+          "table": "credit_finance_agreements",
+          "rows": 59
+        },
+        {
+          "schema": "postgresql_global_credit_store",
+          "table": "credit_finance_offerings",
+          "rows": 182
+        },
+        {
+          "schema": "postgresql_global_credit_store",
+          "table": "credit_risk_grades",
+          "rows": 9
+        },
+        {
+          "schema": "postgresql_global_credit_store",
+          "table": "credit_risk_rating_early_warning_indicators",
+          "rows": 137
+        },
+        {
+          "schema": "postgresql_global_credit_store",
+          "table": "credit_risk_ratings",
+          "rows": 153
+        },
+        {
+          "schema": "postgresql_global_credit_store",
+          "table": "creditshield_finance_records",
+          "rows": 77
+        },
+        {
+          "schema": "postgresql_global_credit_store",
+          "table": "currencies",
+          "rows": 198
+        },
+        {
+          "schema": "postgresql_global_credit_store",
+          "table": "customer_segments",
+          "rows": 218
+        },
+        {
+          "schema": "postgresql_global_credit_store",
+          "table": "customers",
+          "rows": 497
+        },
+        {
+          "schema": "postgresql_global_credit_store",
+          "table": "data_privacy_classifications",
+          "rows": 151
+        },
+        {
+          "schema": "postgresql_global_credit_store",
+          "table": "data_source_systems",
+          "rows": 79
+        },
+        {
+          "schema": "postgresql_global_credit_store",
+          "table": "days_past_due_buckets",
+          "rows": 89
+        },
+        {
+          "schema": "postgresql_global_credit_store",
+          "table": "eba_default_statuses",
+          "rows": 20
+        },
+        {
+          "schema": "postgresql_global_credit_store",
+          "table": "exposure_groups",
+          "rows": 138
+        },
+        {
+          "schema": "postgresql_global_credit_store",
+          "table": "external_rating_agencies",
+          "rows": 72
+        },
+        {
+          "schema": "postgresql_global_credit_store",
+          "table": "facilities",
+          "rows": 192
+        },
+        {
+          "schema": "postgresql_global_credit_store",
+          "table": "industry_sectors",
+          "rows": 80
+        },
+        {
+          "schema": "postgresql_global_credit_store",
+          "table": "interest_rate_types",
+          "rows": 21
+        },
+        {
+          "schema": "postgresql_global_credit_store",
+          "table": "lease_contracts",
+          "rows": 198
+        },
+        {
+          "schema": "postgresql_global_credit_store",
+          "table": "lease_products",
+          "rows": 100
+        },
+        {
+          "schema": "postgresql_global_credit_store",
+          "table": "leased_assets",
+          "rows": 111
+        },
+        {
+          "schema": "postgresql_global_credit_store",
+          "table": "leases",
+          "rows": 93
+        },
+        {
+          "schema": "postgresql_global_credit_store",
+          "table": "leasing_contracts",
+          "rows": 117
+        },
+        {
+          "schema": "postgresql_global_credit_store",
+          "table": "leasing_credit_exposures",
+          "rows": 111
+        },
+        {
+          "schema": "postgresql_global_credit_store",
+          "table": "leasing_products",
+          "rows": 170
+        },
+        {
+          "schema": "postgresql_global_credit_store",
+          "table": "lessee_customers",
+          "rows": 370
+        },
+        {
+          "schema": "postgresql_global_credit_store",
+          "table": "lessor_legal_entities",
+          "rows": 70
+        },
+        {
+          "schema": "postgresql_global_credit_store",
+          "table": "operational_risk_events",
+          "rows": 341
+        },
+        {
+          "schema": "postgresql_global_credit_store",
+          "table": "origination_officers",
+          "rows": 91
+        },
+        {
+          "schema": "postgresql_global_credit_store",
+          "table": "payment_frequencies",
+          "rows": 497
+        },
+        {
+          "schema": "postgresql_global_credit_store",
+          "table": "portfolio_segments",
+          "rows": 17
+        },
+        {
+          "schema": "postgresql_global_credit_store",
+          "table": "pricing_strategies",
+          "rows": 90
+        },
+        {
+          "schema": "postgresql_global_credit_store",
+          "table": "product_families",
+          "rows": 236
+        },
+        {
+          "schema": "postgresql_global_credit_store",
+          "table": "product_types",
+          "rows": 26
+        },
+        {
+          "schema": "postgresql_global_credit_store",
+          "table": "rating_models",
+          "rows": 63
+        },
+        {
+          "schema": "postgresql_global_credit_store",
+          "table": "reference_rates",
+          "rows": 50
+        },
+        {
+          "schema": "postgresql_global_credit_store",
+          "table": "regulatory_portfolios",
+          "rows": 69
+        },
+        {
+          "schema": "postgresql_global_credit_store",
+          "table": "regulatory_product_categories",
+          "rows": 262
+        },
+        {
+          "schema": "postgresql_global_credit_store",
+          "table": "risk_finance_data_set",
+          "rows": 165
+        },
+        {
+          "schema": "postgresql_global_credit_store",
+          "table": "risk_finance_records",
+          "rows": 165
+        },
+        {
+          "schema": "postgresql_global_credit_store",
+          "table": "risk_grades",
+          "rows": 9
+        },
+        {
+          "schema": "postgresql_global_credit_store",
+          "table": "sales_channels",
+          "rows": 50
+        },
+        {
+          "schema": "postgresql_global_credit_store",
+          "table": "source_systems",
+          "rows": 115
+        },
+        {
+          "schema": "profile_app",
+          "table": "creditrisk_finance_dataset",
+          "rows": 152
+        },
+        {
+          "schema": "profile_app",
+          "table": "finance_profile_consents",
+          "rows": 79
+        },
+        {
+          "schema": "profile_app",
+          "table": "finance_profile_financials",
+          "rows": 81
+        },
+        {
+          "schema": "profile_app",
+          "table": "finance_profile_relationship_metrics",
+          "rows": 148
+        },
+        {
+          "schema": "profile_app",
+          "table": "finance_profile_risk_metrics",
+          "rows": 114
+        },
+        {
+          "schema": "profile_app",
+          "table": "finance_profiles",
+          "rows": 437
+        },
+        {
+          "schema": "salesforce_customer_insights",
+          "table": "accounts",
+          "rows": 418
+        },
+        {
+          "schema": "salesforce_customer_insights",
+          "table": "call_center_agents",
+          "rows": 174
+        },
+        {
+          "schema": "salesforce_customer_insights",
+          "table": "client_churn_and_offers",
+          "rows": 107
+        },
+        {
+          "schema": "salesforce_customer_insights",
+          "table": "client_consents",
+          "rows": 144
+        },
+        {
+          "schema": "salesforce_customer_insights",
+          "table": "client_contact_preferences",
+          "rows": 30
+        },
+        {
+          "schema": "salesforce_customer_insights",
+          "table": "client_crm_states",
+          "rows": 119
+        },
+        {
+          "schema": "salesforce_customer_insights",
+          "table": "client_cross_sell_insights",
+          "rows": 140
+        },
+        {
+          "schema": "salesforce_customer_insights",
+          "table": "client_financial_summaries",
+          "rows": 118
+        },
+        {
+          "schema": "salesforce_customer_insights",
+          "table": "client_kyc_risk_assessments",
+          "rows": 116
+        },
+        {
+          "schema": "salesforce_customer_insights",
+          "table": "client_mobility_engagements",
+          "rows": 128
+        },
+        {
+          "schema": "salesforce_customer_insights",
+          "table": "client_segments",
+          "rows": 19
+        },
+        {
+          "schema": "salesforce_customer_insights",
+          "table": "clients",
+          "rows": 192
+        },
+        {
+          "schema": "salesforce_customer_insights",
+          "table": "corporate_groups",
+          "rows": 145
+        },
+        {
+          "schema": "salesforce_customer_insights",
+          "table": "finance_activity_logs",
+          "rows": 348
+        },
+        {
+          "schema": "salesforce_customer_insights",
+          "table": "finance_reviews",
+          "rows": 134
+        },
+        {
+          "schema": "salesforce_customer_insights",
+          "table": "households",
+          "rows": 154
+        },
+        {
+          "schema": "salesforce_customer_insights",
+          "table": "industries",
+          "rows": 130
+        },
+        {
+          "schema": "salesforce_customer_insights",
+          "table": "interactions",
+          "rows": 189
+        },
+        {
+          "schema": "salesforce_customer_insights",
+          "table": "lead_analytics",
+          "rows": 88
+        },
+        {
+          "schema": "salesforce_customer_insights",
+          "table": "lead_engagement_metrics",
+          "rows": 84
+        },
+        {
+          "schema": "salesforce_customer_insights",
+          "table": "leads",
+          "rows": 120
+        },
+        {
+          "schema": "salesforce_customer_insights",
+          "table": "marketing_campaigns",
+          "rows": 91
+        },
+        {
+          "schema": "salesforce_customer_insights",
+          "table": "mobility_contracts",
+          "rows": 207
+        },
+        {
+          "schema": "salesforce_customer_insights",
+          "table": "persons",
+          "rows": 50
+        },
+        {
+          "schema": "salesforce_customer_insights",
+          "table": "relationship_managers",
+          "rows": 154
+        },
+        {
+          "schema": "salesforce_customer_insights",
+          "table": "transactions",
+          "rows": 785
+        },
+        {
+          "schema": "salesforce_customer_insights",
+          "table": "vehicles",
+          "rows": 199
+        },
+        {
+          "schema": "sf_crm_a",
+          "table": "clearing_firm_clients",
+          "rows": 191
+        },
+        {
+          "schema": "sf_crm_a",
+          "table": "clearing_firm_data_insights",
+          "rows": 114
+        },
+        {
+          "schema": "sf_crm_a",
+          "table": "relationship_managers",
+          "rows": 155
+        },
+        {
+          "schema": "sf_crm_a",
+          "table": "third_settlement_parties",
+          "rows": 105
+        }
+      ],
+      "empty": []
+    },
+    "mysql": {
+      "total_tables": 39,
+      "tables_with_data": 39,
+      "empty_tables": 0,
+      "total_rows": 11618,
+      "populated": [
+        {
+          "database": "masreph_american_office_systems",
+          "table": "advice_cost_process_data",
+          "rows": 563
+        },
+        {
+          "database": "masreph_digital_payment_tokens",
+          "table": "digital_payment_tokens_dataset",
+          "rows": 412
+        },
+        {
+          "database": "masreph_docuverify",
+          "table": "docuverify_finance_dataset",
+          "rows": 248
+        },
+        {
+          "database": "masreph_duocircle",
+          "table": "client_email_feedback_dataset",
+          "rows": 846
+        },
+        {
+          "database": "masreph_email_analytics",
+          "table": "finance_email_analytics",
+          "rows": 147
+        },
+        {
+          "database": "masreph_epos_now",
+          "table": "cashflow_at_schiphol_finance_dataset",
+          "rows": 461
+        },
+        {
+          "database": "masreph_it_data_analysis",
+          "table": "it_investment",
+          "rows": 161
+        },
+        {
+          "database": "masreph_it_digital",
+          "table": "service",
+          "rows": 168
+        },
+        {
+          "database": "masreph_it_digital",
+          "table": "service_owner",
+          "rows": 102
+        },
+        {
+          "database": "masreph_marketing_dwh",
+          "table": "finance_segmentation_insights",
+          "rows": 508
+        },
+        {
+          "database": "masreph_masreph_email_analytics",
+          "table": "email_analytics_record",
+          "rows": 2
+        },
+        {
+          "database": "masreph_masreph_web_mobile_message_store",
+          "table": "client",
+          "rows": 3
+        },
+        {
+          "database": "masreph_masreph_web_mobile_message_store",
+          "table": "secure_message_analytic",
+          "rows": 200
+        },
+        {
+          "database": "masreph_masreph_web_mobile_message_store",
+          "table": "secure_message_thread",
+          "rows": 195
+        },
+        {
+          "database": "masreph_microacquire",
+          "table": "trade_finance_collateral_dataset",
+          "rows": 200
+        },
+        {
+          "database": "masreph_microacquire_digital",
+          "table": "collateral",
+          "rows": 313
+        },
+        {
+          "database": "masreph_microacquire_digital",
+          "table": "trade_finance_collateral",
+          "rows": 151
+        },
+        {
+          "database": "masreph_ms_office",
+          "table": "finance_call_insights",
+          "rows": 604
+        },
+        {
+          "database": "masreph_none",
+          "table": "lease_contract",
+          "rows": 148
+        },
+        {
+          "database": "masreph_none",
+          "table": "settlement_event",
+          "rows": 696
+        },
+        {
+          "database": "masreph_none",
+          "table": "source_system",
+          "rows": 195
+        },
+        {
+          "database": "masreph_none",
+          "table": "third_settlement_party",
+          "rows": 113
+        },
+        {
+          "database": "masreph_pandadoc",
+          "table": "bundle_finance_data",
+          "rows": 98
+        },
+        {
+          "database": "masreph_pandadoc_digital",
+          "table": "bundle_finance_product",
+          "rows": 304
+        },
+        {
+          "database": "masreph_processmaker",
+          "table": "commercial_finance_forms",
+          "rows": 457
+        },
+        {
+          "database": "masreph_processmaker",
+          "table": "consumer_finance_forms_dataset",
+          "rows": 308
+        },
+        {
+          "database": "masreph_sendgrid",
+          "table": "finance_email_analytics",
+          "rows": 149
+        },
+        {
+          "database": "masreph_startsida",
+          "table": "customer_finance_data",
+          "rows": 709
+        },
+        {
+          "database": "masreph_startsida",
+          "table": "customer_info_finance",
+          "rows": 517
+        },
+        {
+          "database": "masreph_unknown",
+          "table": "it_data_analysis_dataset",
+          "rows": 182
+        },
+        {
+          "database": "masreph_wati",
+          "table": "digital_finance_messages",
+          "rows": 420
+        },
+        {
+          "database": "masreph_wati",
+          "table": "secure_finance_messages",
+          "rows": 72
+        },
+        {
+          "database": "masreph_wati_digital",
+          "table": "digital_finance_message",
+          "rows": 237
+        },
+        {
+          "database": "masreph_web_mobile_message_store",
+          "table": "finance_message_data",
+          "rows": 159
+        },
+        {
+          "database": "masreph_web_mobile_message_store",
+          "table": "secure_message_analytics",
+          "rows": 362
+        },
+        {
+          "database": "masreph_whispe",
+          "table": "agent",
+          "rows": 147
+        },
+        {
+          "database": "masreph_whispe",
+          "table": "call_interaction",
+          "rows": 129
+        },
+        {
+          "database": "masreph_whispe",
+          "table": "customer",
+          "rows": 403
+        },
+        {
+          "database": "masreph_whispe_speech_recognition",
+          "table": "call_insight_finance_dataset",
+          "rows": 529
+        }
+      ],
+      "empty": [],
+      "access_mode": "connector:localhost"
+    },
+    "snowflake": {
+      "total_tables": 34,
+      "tables_with_data": 34,
+      "empty_tables": 0,
+      "total_rows": 7132,
+      "populated": [
+        {
+          "schema": "ACTICO",
+          "table": "CREDIT_RISK_DATASET",
+          "rows": 116
+        },
+        {
+          "schema": "ACTICO",
+          "table": "CREDIT_RISK_FINANCE_DATASET",
+          "rows": 183
+        },
+        {
+          "schema": "ACTICO",
+          "table": "FINANCEPROVISION_INSIGHTS",
+          "rows": 191
+        },
+        {
+          "schema": "ACTICO",
+          "table": "FINANCE_DEFAULT_INSIGHTS",
+          "rows": 135
+        },
+        {
+          "schema": "ACTICO",
+          "table": "PROVISION_FINANCE_DATASET",
+          "rows": 186
+        },
+        {
+          "schema": "ACTICO",
+          "table": "RISKWATCH_FINANCE_DATASET",
+          "rows": 80
+        },
+        {
+          "schema": "ACTICO",
+          "table": "RISK_WATCH_FINANCE_DATASET",
+          "rows": 347
+        },
+        {
+          "schema": "COMPLIANCE_ARCHIVE",
+          "table": "CLIENT_FILE_ARCHIVE",
+          "rows": 222
+        },
+        {
+          "schema": "CRC_SYSTEMS",
+          "table": "FINANCE_PORTFOLIO_CONTRACTS",
+          "rows": 169
+        },
+        {
+          "schema": "CREDIT_RISK_CONTROLS",
+          "table": "CREDIT_PAYMENT_AGREEMENTS_DATASET",
+          "rows": 487
+        },
+        {
+          "schema": "CREDIT_RISK_INSIGHTS",
+          "table": "CREDIT_RISK_INSIGHTS_DATASET",
+          "rows": 167
+        },
+        {
+          "schema": "ENDORSEMENT_EVALUATIO_APPLICATION",
+          "table": "CREDITRISK_ANALYTICS_DATASET",
+          "rows": 162
+        },
+        {
+          "schema": "ENDORSEMENT_EVALUATIO_APPLICATION",
+          "table": "CREDITRISK_FINANCE_DATASET",
+          "rows": 72
+        },
+        {
+          "schema": "ENDORSEMENT_EVALUATIO_APPLICATION",
+          "table": "CREDIT_RISK_ANALYTICS_DATASET",
+          "rows": 185
+        },
+        {
+          "schema": "ESRB_RATINGS",
+          "table": "FINANCE_ACTIVITY_TARIFFS",
+          "rows": 1300
+        },
+        {
+          "schema": "ESRB_RATINGS",
+          "table": "MASREPH_FINANCE_PORTFOLIO",
+          "rows": 242
+        },
+        {
+          "schema": "ESRB_RATINGS",
+          "table": "QUOTAFLEX_FINANCE_DATASET",
+          "rows": 136
+        },
+        {
+          "schema": "ESRB_RATINGS",
+          "table": "QUOTAFLEX_FINANCE_TERMS",
+          "rows": 155
+        },
+        {
+          "schema": "EUROCOMPLY",
+          "table": "EUROCOMPLY_FINANCE_FILTER",
+          "rows": 111
+        },
+        {
+          "schema": "EUROCOMPLY",
+          "table": "EUROWIRE_COMPLIANCE_DATA",
+          "rows": 81
+        },
+        {
+          "schema": "EUROCOMPLY",
+          "table": "EUROWIRE_COMPLIANCE_DATASET",
+          "rows": 173
+        },
+        {
+          "schema": "JUMIO_RISK_SIGNALS",
+          "table": "CREDIT_RISK_INSIGHTS_DATASET",
+          "rows": 107
+        },
+        {
+          "schema": "RACCENT",
+          "table": "FINANCE_CONTACT_INFORMATION_DATASET",
+          "rows": 185
+        },
+        {
+          "schema": "RACCENT",
+          "table": "FORBEARANCE_FINANCE_DATA_SET",
+          "rows": 132
+        },
+        {
+          "schema": "RACCENT",
+          "table": "PARTNER_FINANCE_DISTRIBUTION_DATA",
+          "rows": 172
+        },
+        {
+          "schema": "RISKCONNECT",
+          "table": "RISKCONNECT_FINANCE_DATASET",
+          "rows": 61
+        },
+        {
+          "schema": "SANCTION_SCANNER",
+          "table": "FINANCE_ENTITY_RISK_ANALYSIS",
+          "rows": 51
+        },
+        {
+          "schema": "SANCTION_SCANNER",
+          "table": "FINANCE_RISK_INSIGHTS",
+          "rows": 142
+        },
+        {
+          "schema": "SANCTION_SCANNER",
+          "table": "RISKFLOW_FINANCE_DATASET",
+          "rows": 160
+        },
+        {
+          "schema": "TRULIOO",
+          "table": "FINANCE_CRIME_DETECTION_DATASET",
+          "rows": 135
+        },
+        {
+          "schema": "TRULIOO",
+          "table": "FINANCE_WATCH_HK",
+          "rows": 117
+        },
+        {
+          "schema": "TRULIOO",
+          "table": "SINGAPORE_FINANCIAL_CRIME_DATASET",
+          "rows": 109
+        },
+        {
+          "schema": "VERIFF",
+          "table": "GLOBAL_CLIENT_COMPLIANCE_DATA",
+          "rows": 602
+        },
+        {
+          "schema": "VERIFF",
+          "table": "GLOBAL_CLIENT_SCREENING_DATA",
+          "rows": 259
+        }
+      ],
+      "empty": []
+    },
+    "oracle": {
+      "total_tables": 0,
+      "tables_with_data": 0,
+      "empty_tables": 0,
+      "total_rows": 0,
+      "populated": [],
+      "empty": []
+    },
+    "mongodb": {
+      "total_tables": 4,
+      "tables_with_data": 4,
+      "empty_tables": 0,
+      "total_rows": 842,
+      "populated": [
+        {
+          "database": "masreph_masrephappregistry",
+          "collection": "masrephAppRegistry",
+          "rows": 188
+        },
+        {
+          "database": "masreph_mdpglobalapi",
+          "collection": "mortgageFinanceProfile",
+          "rows": 491
+        },
+        {
+          "database": "masreph_redaktasr",
+          "collection": "docuVerifyFinanceDataset",
+          "rows": 84
+        },
+        {
+          "database": "masreph_redaktde",
+          "collection": "docuVerifyFinanceDataset",
+          "rows": 79
+        }
+      ],
+      "empty": []
+    },
+    "databricks": {
+      "total_tables": 0,
+      "tables_with_data": 0,
+      "empty_tables": 0,
+      "total_rows": 0,
+      "populated": [],
+      "empty": []
+    },
+    "fabric": {
+      "total_tables": 0,
+      "tables_with_data": 0,
+      "empty_tables": 0,
+      "total_rows": 0,
+      "populated": [],
+      "empty": []
+    }
+  },
+  "errors": {
+    "sql-server": "[WinError 2] The system cannot find the file specified",
+    "oracle": "DPY-4026: file '/mnt/c/Users/Hicham/OneDrive/python/projects/masreph/config/oracle_wallet\\tnsnames.ora' is missing or unreadable\n[WinError 3] The system cannot find the path specified: '/mnt/c/Users/Hicham/OneDrive/python/projects/masreph/config/oracle_wallet\\\\tnsnames.ora'",
+    "databricks": "This Azure storage request is not authorized. The storage account's 'Firewalls and virtual networks' settings may be blocking access to storage services. Please verify your Azure storage credentials or firewall exception settings.",
+    "fabric": "('IM002', '[IM002] [Microsoft][ODBC Driver Manager] Data source name not found and no default driver specified (0) (SQLDriverConnect)')"
+  }
+}

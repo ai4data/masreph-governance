@@ -1,0 +1,1544 @@
+[
+  {
+    "collection": "docuVerifyFinanceDataset",
+    "database": "redaktasr",
+    "description": "This client dataset supports leasing operations. Key applications include relationship management, client profitability analysis, business development. The DocuVerify Finance Dataset contains verified",
+    "validator": {
+      "$jsonSchema": {
+        "bsonType": "object",
+        "required": [
+          "clientId",
+          "leaseContractId",
+          "documentId",
+          "clientSegmentCode",
+          "clientResidencyCountryCode",
+          "clientOnboardingDate",
+          "clientLeasePortfolioBalanceEur",
+          "clientActiveLeaseCount",
+          "clientDefaultHistoryFlag",
+          "clientConsentGdprFlag",
+          "relationshipStageCode",
+          "documentTypeCode",
+          "documentStorageLocationUri",
+          "crmSourceSystemCode",
+          "recordCreationTimestamp",
+          "recordLastUpdatedTimestamp"
+        ],
+        "properties": {
+          "clientId": {
+            "bsonType": "string"
+          },
+          "leaseContractId": {
+            "bsonType": "string"
+          },
+          "documentId": {
+            "bsonType": "string"
+          },
+          "clientSegmentCode": {
+            "bsonType": "string"
+          },
+          "clientResidencyCountryCode": {
+            "bsonType": "string"
+          },
+          "clientBirthDate": {
+            "bsonType": "date"
+          },
+          "clientOnboardingDate": {
+            "bsonType": "date"
+          },
+          "clientRiskRating": {
+            "bsonType": "string"
+          },
+          "clientRiskRatingDate": {
+            "bsonType": "date"
+          },
+          "clientProfitabilityScore": {
+            "bsonType": "double"
+          },
+          "clientLifetimeValueEur": {
+            "bsonType": "double"
+          },
+          "clientAnnualRevenueEur": {
+            "bsonType": "double"
+          },
+          "clientLeasePortfolioBalanceEur": {
+            "bsonType": "double"
+          },
+          "clientActiveLeaseCount": {
+            "bsonType": "int"
+          },
+          "clientDefaultHistoryFlag": {
+            "bsonType": "bool"
+          },
+          "clientPepFlag": {
+            "bsonType": "bool"
+          },
+          "clientConsentGdprFlag": {
+            "bsonType": "bool"
+          },
+          "clientPreferredContactChannel": {
+            "bsonType": "string"
+          },
+          "clientPrimaryEmailAddress": {
+            "bsonType": "string"
+          },
+          "clientMobilePhoneNumber": {
+            "bsonType": "string"
+          },
+          "clientIndustryCodeNace": {
+            "bsonType": "string"
+          },
+          "clientEmploymentStatus": {
+            "bsonType": "string"
+          },
+          "clientRelationshipManagerId": {
+            "bsonType": "string"
+          },
+          "relationshipStageCode": {
+            "bsonType": "string"
+          },
+          "relationshipStageEffectiveDate": {
+            "bsonType": "date"
+          },
+          "lastInteractionTimestamp": {
+            "bsonType": "date"
+          },
+          "lastInteractionChannels": {
+            "bsonType": "array"
+          },
+          "nextScheduledContactDate": {
+            "bsonType": "date"
+          },
+          "kycReviewDueDate": {
+            "bsonType": "date"
+          },
+          "documentTypeCode": {
+            "bsonType": "string"
+          },
+          "documentIssueDate": {
+            "bsonType": "date"
+          },
+          "documentExpiryDate": {
+            "bsonType": "date"
+          },
+          "documentVerificationResult": {
+            "bsonType": "object"
+          },
+          "documentVerificationTimestamp": {
+            "bsonType": "date"
+          },
+          "documentStorageLocationUri": {
+            "bsonType": "string"
+          },
+          "crmSourceSystemCode": {
+            "bsonType": "string"
+          },
+          "recordCreationTimestamp": {
+            "bsonType": "date"
+          },
+          "recordLastUpdatedTimestamp": {
+            "bsonType": "date"
+          }
+        }
+      }
+    }
+  },
+  {
+    "collection": "docuVerifyFinanceDataset",
+    "database": "redaktasr",
+    "description": "This client dataset supports leasing operations. Key applications include relationship management, client profitability analysis, business development. The DocuVerify Finance Dataset contains verified",
+    "validator": {
+      "$jsonSchema": {
+        "bsonType": "object",
+        "required": [
+          "clientDvId",
+          "clientLegalId",
+          "clientResidenceCountryCode",
+          "leasingRelationshipStartDate",
+          "primarySegmentCode",
+          "totalOutstandingLeaseBalanceEur",
+          "documentVerificationStatus",
+          "marketingConsentFlag",
+          "paymentArrearsDaysMax12m",
+          "clientLifecycleStage"
+        ],
+        "properties": {
+          "clientDvId": {
+            "bsonType": "string"
+          },
+          "clientLegalId": {
+            "bsonType": "string"
+          },
+          "clientResidenceCountryCode": {
+            "bsonType": "string"
+          },
+          "leasingRelationshipStartDate": {
+            "bsonType": "date"
+          },
+          "primarySegmentCode": {
+            "bsonType": "string"
+          },
+          "verifiedIncomeAnnualEur": {
+            "bsonType": "double"
+          },
+          "verifiedEmploymentStatus": {
+            "bsonType": "string"
+          },
+          "totalOutstandingLeaseBalanceEur": {
+            "bsonType": "double"
+          },
+          "avgMonthlyLeasePaymentEur": {
+            "bsonType": "double"
+          },
+          "documentVerificationStatus": {
+            "bsonType": "string"
+          },
+          "lastDocumentVerifiedTimestamp": {
+            "bsonType": "date"
+          },
+          "verifiedDocumentTypes": {
+            "bsonType": "array"
+          },
+          "primaryContactChannel": {
+            "bsonType": "string"
+          },
+          "marketingConsentFlag": {
+            "bsonType": "bool"
+          },
+          "clientProfitabilityRolling12mEur": {
+            "bsonType": "double"
+          },
+          "leasePortfolioRiskGrade": {
+            "bsonType": "string"
+          },
+          "paymentArrearsDaysMax12m": {
+            "bsonType": "int"
+          },
+          "relationshipManagerId": {
+            "bsonType": "string"
+          },
+          "clientLifecycleStage": {
+            "bsonType": "string"
+          },
+          "ibanMasked": {
+            "bsonType": "string"
+          },
+          "documentVerificationSummary": {
+            "bsonType": "object"
+          }
+        }
+      }
+    }
+  },
+  {
+    "collection": "docuVerifyFinanceDataset",
+    "database": "redaktasr",
+    "description": "This client dataset supports leasing operations. Key applications include relationship management, client profitability analysis, business development. The DocuVerify Finance Dataset contains verified",
+    "validator": {
+      "$jsonSchema": {
+        "bsonType": "object",
+        "required": [
+          "clientId",
+          "clientFullName",
+          "clientSegment",
+          "clientResidencyCountryCode",
+          "clientOnboardingDate",
+          "kycReviewStatus",
+          "gdprConsentFlag",
+          "totalActiveLeasesCount",
+          "totalOutstandingLeasingBalance",
+          "documentVerificationStatus",
+          "crossSellEligibilityFlag",
+          "dataLineageSourceSystem",
+          "clientStatus",
+          "primaryCurrencyCode"
+        ],
+        "properties": {
+          "clientId": {
+            "bsonType": "string"
+          },
+          "clientLegacyNumber": {
+            "bsonType": "string"
+          },
+          "leasingContractId": {
+            "bsonType": "string"
+          },
+          "documentBundleId": {
+            "bsonType": "string"
+          },
+          "clientFullName": {
+            "bsonType": "string"
+          },
+          "clientSegment": {
+            "bsonType": "string"
+          },
+          "clientResidencyCountryCode": {
+            "bsonType": "string"
+          },
+          "clientBirthDate": {
+            "bsonType": "date"
+          },
+          "clientOnboardingDate": {
+            "bsonType": "date"
+          },
+          "relationshipManagerId": {
+            "bsonType": "string"
+          },
+          "primaryContactChannel": {
+            "bsonType": "string"
+          },
+          "kycReviewStatus": {
+            "bsonType": "string"
+          },
+          "kycLastReviewedTimestamp": {
+            "bsonType": "date"
+          },
+          "gdprConsentFlag": {
+            "bsonType": "bool"
+          },
+          "gdprConsentLastUpdated": {
+            "bsonType": "date"
+          },
+          "totalActiveLeasesCount": {
+            "bsonType": "int"
+          },
+          "totalOutstandingLeasingBalance": {
+            "bsonType": "double"
+          },
+          "averageLeaseMarginRate": {
+            "bsonType": "double"
+          },
+          "lastLeaseContractStartDate": {
+            "bsonType": "date"
+          },
+          "lastPaymentReceivedTimestamp": {
+            "bsonType": "date"
+          },
+          "paymentBehaviorScore": {
+            "bsonType": "int"
+          },
+          "riskRatingInternal": {
+            "bsonType": "string"
+          },
+          "documentVerificationStatus": {
+            "bsonType": "string"
+          },
+          "documentVerificationTimestamp": {
+            "bsonType": "date"
+          },
+          "incomeVerifiedAnnualAmount": {
+            "bsonType": "double"
+          },
+          "incomeSourceType": {
+            "bsonType": "string"
+          },
+          "clientProfitabilityRolling12m": {
+            "bsonType": "double"
+          },
+          "crossSellEligibilityFlag": {
+            "bsonType": "bool"
+          },
+          "preferredLanguageCode": {
+            "bsonType": "string"
+          },
+          "regionCluster": {
+            "bsonType": "string"
+          },
+          "interactionChannelLast90d": {
+            "bsonType": "array"
+          },
+          "dataLineageSourceSystem": {
+            "bsonType": "object"
+          },
+          "clientStatus": {
+            "bsonType": "string"
+          },
+          "primaryCurrencyCode": {
+            "bsonType": "string"
+          }
+        }
+      }
+    }
+  },
+  {
+    "collection": "docuVerifyFinanceDataset",
+    "database": "redaktasr",
+    "description": "This client dataset supports leasing operations. Key applications include relationship management, client profitability analysis, business development. The DocuVerify Finance Dataset contains verified",
+    "validator": {
+      "$jsonSchema": {
+        "bsonType": "object",
+        "required": [
+          "clientId",
+          "leaseContractId",
+          "docuverifyDocumentId",
+          "clientCountryCode",
+          "clientRiskSegment",
+          "verifiedFinancialStatementType",
+          "financialStatementPeriodStartDate",
+          "financialStatementPeriodEndDate",
+          "incomeCurrencyCode",
+          "documentVerificationStatus",
+          "documentVerificationTimestamp",
+          "consentToDataProcessingFlag"
+        ],
+        "properties": {
+          "clientId": {
+            "bsonType": "string"
+          },
+          "leaseContractId": {
+            "bsonType": "string"
+          },
+          "docuverifyDocumentId": {
+            "bsonType": "string"
+          },
+          "clientCountryCode": {
+            "bsonType": "string"
+          },
+          "clientRiskSegment": {
+            "bsonType": "string"
+          },
+          "verifiedFinancialStatementType": {
+            "bsonType": "string"
+          },
+          "financialStatementPeriodStartDate": {
+            "bsonType": "date"
+          },
+          "financialStatementPeriodEndDate": {
+            "bsonType": "date"
+          },
+          "verifiedAnnualIncomeAmount": {
+            "bsonType": "double"
+          },
+          "incomeCurrencyCode": {
+            "bsonType": "string"
+          },
+          "documentVerificationStatus": {
+            "bsonType": "string"
+          },
+          "documentVerificationTimestamp": {
+            "bsonType": "date"
+          },
+          "profitabilityMarginPct": {
+            "bsonType": "double"
+          },
+          "relationshipManagerId": {
+            "bsonType": "string"
+          },
+          "clientTenureMonths": {
+            "bsonType": "int"
+          },
+          "consentToDataProcessingFlag": {
+            "bsonType": "bool"
+          }
+        }
+      }
+    }
+  },
+  {
+    "collection": "docuVerifyFinanceDataset",
+    "database": "redaktasr",
+    "description": "This client dataset supports leasing operations. Key applications include relationship management, client profitability analysis, business development. The DocuVerify Finance Dataset contains verified",
+    "validator": {
+      "$jsonSchema": {
+        "bsonType": "object",
+        "required": [
+          "clientId",
+          "clientLeasingAccountId",
+          "clientFullName",
+          "clientType",
+          "countryOfResidenceCode",
+          "euResidencyStatus",
+          "clientOnboardingTimestamp",
+          "kycVerificationStatus",
+          "amlRiskRating",
+          "amlRiskScore",
+          "gdprConsentMarketingFlag",
+          "gdprConsentProcessingFlag",
+          "leasingPortfolioOutstandingBalanceEur",
+          "leasingContractsActiveCount",
+          "leasingContracts12mOriginatedCount",
+          "daysPastDueMax12m",
+          "writeOffIndicator",
+          "documentPackageId",
+          "documentVerificationStatus",
+          "crossSellEligibilityFlag",
+          "relationshipTenureMonths",
+          "dataSourceSystemCode",
+          "recordCreationTimestamp",
+          "recordLastUpdatedTimestamp"
+        ],
+        "properties": {
+          "clientId": {
+            "bsonType": "string"
+          },
+          "clientLeasingAccountId": {
+            "bsonType": "string"
+          },
+          "externalCrmReferenceId": {
+            "bsonType": "string"
+          },
+          "nationalClientIdentifier": {
+            "bsonType": "string"
+          },
+          "clientFullName": {
+            "bsonType": "string"
+          },
+          "clientType": {
+            "bsonType": "string"
+          },
+          "countryOfResidenceCode": {
+            "bsonType": "string"
+          },
+          "euResidencyStatus": {
+            "bsonType": "string"
+          },
+          "dateOfBirth": {
+            "bsonType": "date"
+          },
+          "clientOnboardingTimestamp": {
+            "bsonType": "date"
+          },
+          "relationshipManagerId": {
+            "bsonType": "string"
+          },
+          "primaryContactEmail": {
+            "bsonType": "string"
+          },
+          "primaryContactPhone": {
+            "bsonType": "string"
+          },
+          "kycVerificationStatus": {
+            "bsonType": "string"
+          },
+          "kycLastReviewDate": {
+            "bsonType": "date"
+          },
+          "amlRiskRating": {
+            "bsonType": "string"
+          },
+          "amlRiskScore": {
+            "bsonType": "double"
+          },
+          "preferredCommunicationLanguage": {
+            "bsonType": "string"
+          },
+          "gdprConsentMarketingFlag": {
+            "bsonType": "bool"
+          },
+          "gdprConsentProcessingFlag": {
+            "bsonType": "bool"
+          },
+          "gdprConsentLastUpdatedTimestamp": {
+            "bsonType": "date"
+          },
+          "leasingPortfolioOutstandingBalanceEur": {
+            "bsonType": "double"
+          },
+          "leasingContractsActiveCount": {
+            "bsonType": "int"
+          },
+          "leasingContracts12mOriginatedCount": {
+            "bsonType": "int"
+          },
+          "averageMonthlyLeasePaymentEur": {
+            "bsonType": "double"
+          },
+          "clientProfitabilityScore12m": {
+            "bsonType": "double"
+          },
+          "clientProfitabilitySegment": {
+            "bsonType": "string"
+          },
+          "lastLeaseContractStartDate": {
+            "bsonType": "date"
+          },
+          "lastLeaseContractEndDate": {
+            "bsonType": "date"
+          },
+          "paymentBehaviorRating": {
+            "bsonType": "string"
+          },
+          "daysPastDueMax12m": {
+            "bsonType": "int"
+          },
+          "writeOffIndicator": {
+            "bsonType": "bool"
+          },
+          "documentPackageId": {
+            "bsonType": "string"
+          },
+          "documentVerificationStatus": {
+            "bsonType": "string"
+          },
+          "documentVerificationTimestamp": {
+            "bsonType": "date"
+          },
+          "verifiedIncomeAmountEur": {
+            "bsonType": "double"
+          },
+          "verifiedIncomeSourceType": {
+            "bsonType": "string"
+          },
+          "bankStatementCoverageMonths": {
+            "bsonType": "int"
+          },
+          "lastBankStatementReceivedDate": {
+            "bsonType": "date"
+          },
+          "investmentPropensityScore": {
+            "bsonType": "double"
+          },
+          "crossSellEligibilityFlag": {
+            "bsonType": "bool"
+          },
+          "nextBestOfferType": {
+            "bsonType": "string"
+          },
+          "relationshipTenureMonths": {
+            "bsonType": "int"
+          },
+          "lastClientInteractionTimestamp": {
+            "bsonType": "date"
+          },
+          "preferredContactChannel": {
+            "bsonType": "string"
+          },
+          "dataSourceSystemCode": {
+            "bsonType": "string"
+          },
+          "recordCreationTimestamp": {
+            "bsonType": "date"
+          },
+          "recordLastUpdatedTimestamp": {
+            "bsonType": "date"
+          },
+          "dataQualityScore": {
+            "bsonType": "double"
+          }
+        }
+      }
+    }
+  },
+  {
+    "collection": "docuVerifyFinanceDataset",
+    "database": "redaktasr",
+    "description": "This client dataset supports commercial finance operations. Key applications include relationship management, client profitability analysis, business development. The DocuVerify Finance Dataset contai",
+    "validator": {
+      "$jsonSchema": {
+        "bsonType": "object",
+        "required": [
+          "clientId",
+          "relationshipId",
+          "clientSegmentCode",
+          "countryOfRegistration",
+          "primaryIndustryCode",
+          "relationshipManagerId",
+          "relationshipManagerName",
+          "onboardingDate",
+          "clientStatusCode",
+          "clientStatusEffectiveDate",
+          "relationshipTenureMonths",
+          "consentToMarketingFlag",
+          "registeredCompanyName",
+          "documentVerifiedFlag",
+          "dataSourceSystemCode"
+        ],
+        "properties": {
+          "clientId": {
+            "bsonType": "string"
+          },
+          "relationshipId": {
+            "bsonType": "string"
+          },
+          "legalEntityIdentifier": {
+            "bsonType": "string"
+          },
+          "clientSegmentCode": {
+            "bsonType": "string"
+          },
+          "clientSegmentDescription": {
+            "bsonType": "string"
+          },
+          "countryOfRegistration": {
+            "bsonType": "string"
+          },
+          "domicileCountryIso2": {
+            "bsonType": "string"
+          },
+          "primaryIndustryCode": {
+            "bsonType": "string"
+          },
+          "primaryIndustryDescription": {
+            "bsonType": "string"
+          },
+          "relationshipManagerId": {
+            "bsonType": "string"
+          },
+          "relationshipManagerName": {
+            "bsonType": "string"
+          },
+          "onboardingDate": {
+            "bsonType": "date"
+          },
+          "firstCreditFacilityDate": {
+            "bsonType": "date"
+          },
+          "clientStatusCode": {
+            "bsonType": "string"
+          },
+          "clientStatusEffectiveDate": {
+            "bsonType": "date"
+          },
+          "annualTurnoverAmount": {
+            "bsonType": "double"
+          },
+          "annualTurnoverCurrency": {
+            "bsonType": "string"
+          },
+          "totalExposureAmount": {
+            "bsonType": "double"
+          },
+          "totalExposureCurrency": {
+            "bsonType": "string"
+          },
+          "riskRatingInternal": {
+            "bsonType": "string"
+          },
+          "riskRatingExternal": {
+            "bsonType": "string"
+          },
+          "riskRatingReviewDate": {
+            "bsonType": "date"
+          },
+          "profitabilityScore": {
+            "bsonType": "double"
+          },
+          "netInterestIncomeYtdAmount": {
+            "bsonType": "double"
+          },
+          "nonInterestIncomeYtdAmount": {
+            "bsonType": "double"
+          },
+          "costOfCapitalRate": {
+            "bsonType": "double"
+          },
+          "relationshipTenureMonths": {
+            "bsonType": "int"
+          },
+          "lastContactTimestamp": {
+            "bsonType": "date"
+          },
+          "preferredContactChannel": {
+            "bsonType": "string"
+          },
+          "consentToMarketingFlag": {
+            "bsonType": "bool"
+          },
+          "gdprConsentLastUpdated": {
+            "bsonType": "date"
+          },
+          "primaryContactEmail": {
+            "bsonType": "string"
+          },
+          "primaryContactPhone": {
+            "bsonType": "string"
+          },
+          "registeredCompanyName": {
+            "bsonType": "string"
+          },
+          "registeredCompanyNumber": {
+            "bsonType": "string"
+          },
+          "documentBundleId": {
+            "bsonType": "string"
+          },
+          "documentVerifiedFlag": {
+            "bsonType": "bool"
+          },
+          "documentVerificationTimestamp": {
+            "bsonType": "date"
+          },
+          "latestFinancialStatementPeriodEnd": {
+            "bsonType": "date"
+          },
+          "latestFinancialStatementType": {
+            "bsonType": "string"
+          },
+          "latestFinancialStatementRevenue": {
+            "bsonType": "double"
+          },
+          "latestFinancialStatementEbitda": {
+            "bsonType": "double"
+          },
+          "crossSellOpportunityScore": {
+            "bsonType": "double"
+          },
+          "nextBestActionCode": {
+            "bsonType": "string"
+          },
+          "nextBestActionValidTo": {
+            "bsonType": "date"
+          },
+          "clientProfitabilityBand": {
+            "bsonType": "string"
+          },
+          "dataSourceSystemCode": {
+            "bsonType": "string"
+          }
+        }
+      }
+    }
+  },
+  {
+    "collection": "docuVerifyFinanceDataset",
+    "database": "redaktasr",
+    "description": "This client dataset supports commercial finance operations. Key applications include relationship management, client profitability analysis, business development. The DocuVerify Finance Dataset contai",
+    "validator": {
+      "$jsonSchema": {
+        "bsonType": "object",
+        "required": [
+          "clientId",
+          "coreBankingCustomerNumber",
+          "countryOfDomicile",
+          "primaryRelationshipManagerId",
+          "clientSegmentCode",
+          "clientOnboardingDate",
+          "verificationStatus",
+          "exposureCurrencyCode",
+          "docuverifyRecordSourceSystem",
+          "clientLifecycleStage",
+          "relationshipStatus",
+          "isCrossBorderClient",
+          "numberOfVerifiedFinancialDocuments",
+          "interactionFrequencyLast90dCount",
+          "hasDelinquentObligations",
+          "consentForMarketingCommunications",
+          "pipelineOpportunityCount"
+        ],
+        "properties": {
+          "clientId": {
+            "bsonType": "string"
+          },
+          "coreBankingCustomerNumber": {
+            "bsonType": "string"
+          },
+          "countryOfDomicile": {
+            "bsonType": "string"
+          },
+          "primaryRelationshipManagerId": {
+            "bsonType": "string"
+          },
+          "clientSegmentCode": {
+            "bsonType": "string"
+          },
+          "industryClassificationCode": {
+            "bsonType": "string"
+          },
+          "clientOnboardingDate": {
+            "bsonType": "date"
+          },
+          "latestDocumentVerificationTimestamp": {
+            "bsonType": "date"
+          },
+          "verificationStatus": {
+            "bsonType": "string"
+          },
+          "kycRiskRating": {
+            "bsonType": "string"
+          },
+          "totalOutstandingExposureAmount": {
+            "bsonType": "double"
+          },
+          "exposureCurrencyCode": {
+            "bsonType": "string"
+          },
+          "annualRevenueAmount": {
+            "bsonType": "double"
+          },
+          "annualRevenueFiscalYear": {
+            "bsonType": "int"
+          },
+          "ebitdaMarginPercent": {
+            "bsonType": "double"
+          },
+          "netProfitMarginPercent": {
+            "bsonType": "double"
+          },
+          "leverageRatio": {
+            "bsonType": "double"
+          },
+          "interestCoverageRatio": {
+            "bsonType": "double"
+          },
+          "docuverifyRecordSourceSystem": {
+            "bsonType": "string"
+          },
+          "primaryContactEmailMasked": {
+            "bsonType": "string"
+          },
+          "primaryContactPhoneMasked": {
+            "bsonType": "string"
+          },
+          "clientLifecycleStage": {
+            "bsonType": "string"
+          },
+          "relationshipStartDate": {
+            "bsonType": "date"
+          },
+          "relationshipStatus": {
+            "bsonType": "string"
+          },
+          "isCrossBorderClient": {
+            "bsonType": "bool"
+          },
+          "numberOfVerifiedFinancialDocuments": {
+            "bsonType": "int"
+          },
+          "latestFinancialStatementPeriodEnd": {
+            "bsonType": "date"
+          },
+          "portfolioProfitabilityLast12mAmount": {
+            "bsonType": "double"
+          },
+          "portfolioRevenueLast12mAmount": {
+            "bsonType": "double"
+          },
+          "allocatedCostLast12mAmount": {
+            "bsonType": "double"
+          },
+          "primaryBankingChannelCode": {
+            "bsonType": "string"
+          },
+          "lastInteractionTimestamp": {
+            "bsonType": "date"
+          },
+          "interactionFrequencyLast90dCount": {
+            "bsonType": "int"
+          },
+          "hasDelinquentObligations": {
+            "bsonType": "bool"
+          },
+          "maxDaysPastDueLast12m": {
+            "bsonType": "int"
+          },
+          "creditLimitApprovedAmount": {
+            "bsonType": "double"
+          },
+          "creditUtilizationPercent": {
+            "bsonType": "double"
+          },
+          "preferredMeetingLocationCity": {
+            "bsonType": "string"
+          },
+          "consentForMarketingCommunications": {
+            "bsonType": "bool"
+          },
+          "gdprDataProcessingLegalBasis": {
+            "bsonType": "string"
+          },
+          "primaryOperatingAccountIbanMasked": {
+            "bsonType": "string"
+          },
+          "documentLanguages": {
+            "bsonType": "array"
+          },
+          "supportedRelationshipCountries": {
+            "bsonType": "array"
+          },
+          "clientProfitabilitySegmentObject": {
+            "bsonType": "object"
+          },
+          "relationshipTeamStructure": {
+            "bsonType": "object"
+          },
+          "nextReviewDueDate": {
+            "bsonType": "date"
+          },
+          "pipelineOpportunityValueAmount": {
+            "bsonType": "double"
+          },
+          "pipelineOpportunityCount": {
+            "bsonType": "int"
+          }
+        }
+      }
+    }
+  },
+  {
+    "collection": "docuVerifyFinanceDataset",
+    "database": "redaktasr",
+    "description": "This client dataset supports leasing operations. Key applications include relationship management, client profitability analysis, business development. The DocuVerify Finance Dataset contains verified",
+    "validator": {
+      "$jsonSchema": {
+        "bsonType": "object",
+        "required": [
+          "docuverifyClientId",
+          "sourceSystemId",
+          "clientLeaseAccountId",
+          "legalEntityName",
+          "clientSegmentCode",
+          "countryOfResidenceCode",
+          "primaryIdentifierType",
+          "primaryIdentifierValue",
+          "clientOnboardingTimestamp",
+          "totalLeasedAssetBalance",
+          "totalOutstandingLeasePrincipal",
+          "marketingConsentFlag",
+          "dataPrivacyConsentFlag",
+          "documentPackageId",
+          "documentVerificationStatus",
+          "crmLifecycleStage",
+          "crossSellEligibilityFlag",
+          "recordCreationTimestamp"
+        ],
+        "properties": {
+          "docuverifyClientId": {
+            "bsonType": "string"
+          },
+          "sourceSystemId": {
+            "bsonType": "string"
+          },
+          "clientLeaseAccountId": {
+            "bsonType": "string"
+          },
+          "legalEntityName": {
+            "bsonType": "string"
+          },
+          "clientSegmentCode": {
+            "bsonType": "string"
+          },
+          "clientSegmentDesc": {
+            "bsonType": "string"
+          },
+          "countryOfResidenceCode": {
+            "bsonType": "string"
+          },
+          "countryOfResidenceName": {
+            "bsonType": "string"
+          },
+          "primaryIdentifierType": {
+            "bsonType": "string"
+          },
+          "primaryIdentifierValue": {
+            "bsonType": "string"
+          },
+          "dateOfBirth": {
+            "bsonType": "date"
+          },
+          "clientOnboardingTimestamp": {
+            "bsonType": "date"
+          },
+          "kycLastReviewDate": {
+            "bsonType": "date"
+          },
+          "riskRatingScore": {
+            "bsonType": "double"
+          },
+          "riskRatingBand": {
+            "bsonType": "string"
+          },
+          "annualReportedIncomeAmount": {
+            "bsonType": "double"
+          },
+          "annualReportedIncomeCurrency": {
+            "bsonType": "string"
+          },
+          "totalLeasedAssetBalance": {
+            "bsonType": "double"
+          },
+          "totalOutstandingLeasePrincipal": {
+            "bsonType": "double"
+          },
+          "leasePortfolioYieldRate": {
+            "bsonType": "double"
+          },
+          "clientProfitabilityScore": {
+            "bsonType": "double"
+          },
+          "relationshipManagerId": {
+            "bsonType": "string"
+          },
+          "relationshipManagerRegion": {
+            "bsonType": "string"
+          },
+          "lastInteractionTimestamp": {
+            "bsonType": "date"
+          },
+          "preferredContactChannel": {
+            "bsonType": "string"
+          },
+          "emailContactAddress": {
+            "bsonType": "string"
+          },
+          "mobileContactNumber": {
+            "bsonType": "string"
+          },
+          "marketingConsentFlag": {
+            "bsonType": "bool"
+          },
+          "dataPrivacyConsentFlag": {
+            "bsonType": "bool"
+          },
+          "documentPackageId": {
+            "bsonType": "string"
+          },
+          "documentTypeCode": {
+            "bsonType": "string"
+          },
+          "documentVerificationStatus": {
+            "bsonType": "string"
+          },
+          "documentVerificationTimestamp": {
+            "bsonType": "date"
+          },
+          "documentExpiryDate": {
+            "bsonType": "date"
+          },
+          "incomeVerificationMethod": {
+            "bsonType": "string"
+          },
+          "employmentStatusCode": {
+            "bsonType": "string"
+          },
+          "industryClassificationCode": {
+            "bsonType": "string"
+          },
+          "crmLifecycleStage": {
+            "bsonType": "string"
+          },
+          "churnRiskScore": {
+            "bsonType": "double"
+          },
+          "crossSellEligibilityFlag": {
+            "bsonType": "bool"
+          },
+          "lastLeaseApplicationDecision": {
+            "bsonType": "string"
+          },
+          "lastLeaseApplicationDecisionDate": {
+            "bsonType": "date"
+          },
+          "recordCreationTimestamp": {
+            "bsonType": "date"
+          }
+        }
+      }
+    }
+  },
+  {
+    "collection": "docuVerifyFinanceDataset",
+    "database": "redaktasr",
+    "description": "This client dataset supports commercial finance operations. Key applications include relationship management, client profitability analysis, business development. The DocuVerify Finance Dataset contai",
+    "validator": {
+      "$jsonSchema": {
+        "bsonType": "object",
+        "required": [
+          "clientId",
+          "clientLegalEntityName",
+          "clientSegment",
+          "clientCountryOfDomicile",
+          "onboardingDate",
+          "clientLifecycleStage",
+          "gdprConsentMarketing",
+          "gdprConsentDataProcessing",
+          "dataRecordCreatedTimestamp"
+        ],
+        "properties": {
+          "clientId": {
+            "bsonType": "string"
+          },
+          "clientLegalEntityName": {
+            "bsonType": "string"
+          },
+          "clientSegment": {
+            "bsonType": "string"
+          },
+          "clientCountryOfDomicile": {
+            "bsonType": "string"
+          },
+          "clientIndustryCodeNace": {
+            "bsonType": "string"
+          },
+          "relationshipManagerId": {
+            "bsonType": "string"
+          },
+          "relationshipManagerRegion": {
+            "bsonType": "string"
+          },
+          "onboardingDate": {
+            "bsonType": "date"
+          },
+          "lastContactTimestamp": {
+            "bsonType": "date"
+          },
+          "kycReviewDueDate": {
+            "bsonType": "date"
+          },
+          "clientRiskRating": {
+            "bsonType": "string"
+          },
+          "creditLimitEur": {
+            "bsonType": "double"
+          },
+          "outstandingExposureEur": {
+            "bsonType": "double"
+          },
+          "totalCommitmentEur": {
+            "bsonType": "double"
+          },
+          "probabilityOfDefaultPct": {
+            "bsonType": "double"
+          },
+          "lossGivenDefaultPct": {
+            "bsonType": "double"
+          },
+          "interestIncomeYtdEur": {
+            "bsonType": "double"
+          },
+          "feeIncomeYtdEur": {
+            "bsonType": "double"
+          },
+          "costToServeYtdEur": {
+            "bsonType": "double"
+          },
+          "clientProfitabilityYtdEur": {
+            "bsonType": "double"
+          },
+          "clientLifecycleStage": {
+            "bsonType": "string"
+          },
+          "clientContactPreferenceChannel": {
+            "bsonType": "string"
+          },
+          "gdprConsentMarketing": {
+            "bsonType": "bool"
+          },
+          "gdprConsentDataProcessing": {
+            "bsonType": "bool"
+          },
+          "primaryContactEmailHash": {
+            "bsonType": "string"
+          },
+          "primaryContactPhoneHash": {
+            "bsonType": "string"
+          },
+          "ultimateParentClientId": {
+            "bsonType": "string"
+          },
+          "groupExposureEur": {
+            "bsonType": "double"
+          },
+          "documentPackageId": {
+            "bsonType": "string"
+          },
+          "documentType": {
+            "bsonType": "string"
+          },
+          "documentIssueDate": {
+            "bsonType": "date"
+          },
+          "documentReceivedTimestamp": {
+            "bsonType": "date"
+          },
+          "documentVerificationStatus": {
+            "bsonType": "string"
+          },
+          "documentVerificationSource": {
+            "bsonType": "string"
+          },
+          "documentConfidenceScore": {
+            "bsonType": "double"
+          },
+          "financialYearEndDate": {
+            "bsonType": "date"
+          },
+          "latestAuditedRevenueEur": {
+            "bsonType": "double"
+          },
+          "latestAuditedEbitdaEur": {
+            "bsonType": "double"
+          },
+          "latestAuditedTotalAssetsEur": {
+            "bsonType": "double"
+          },
+          "sanctionsScreeningStatus": {
+            "bsonType": "string"
+          },
+          "pepFlag": {
+            "bsonType": "bool"
+          },
+          "churnRiskScore": {
+            "bsonType": "double"
+          },
+          "crossSellOpportunityScore": {
+            "bsonType": "double"
+          },
+          "dataRecordCreatedTimestamp": {
+            "bsonType": "date"
+          }
+        }
+      }
+    }
+  },
+  {
+    "collection": "docuVerifyFinanceDataset",
+    "database": "redaktasr",
+    "description": "This client dataset supports leasing operations. Key applications include relationship management, client profitability analysis, business development. The DocuVerify Finance Dataset contains verified",
+    "validator": {
+      "$jsonSchema": {
+        "bsonType": "object",
+        "required": [
+          "datasetClientId",
+          "sourceSystemCode",
+          "clientLegalName",
+          "clientResidenceCountryCode",
+          "clientOnboardingDate",
+          "leasingExposureCurrentAmount",
+          "leasingContractsActiveCount",
+          "kycReviewStatus",
+          "amlWatchlistScreeningFlag",
+          "dataPrivacyConsentFlag",
+          "relationshipTenureMonths",
+          "recordCreationTimestamp"
+        ],
+        "properties": {
+          "datasetClientId": {
+            "bsonType": "string"
+          },
+          "sourceSystemCode": {
+            "bsonType": "string"
+          },
+          "clientLegalName": {
+            "bsonType": "string"
+          },
+          "clientNationalIdHash": {
+            "bsonType": "string"
+          },
+          "clientTaxIdentificationNumber": {
+            "bsonType": "string"
+          },
+          "clientResidenceCountryCode": {
+            "bsonType": "string"
+          },
+          "leasingCustomerSegmentCode": {
+            "bsonType": "string"
+          },
+          "relationshipManagerId": {
+            "bsonType": "string"
+          },
+          "primaryContactEmail": {
+            "bsonType": "string"
+          },
+          "primaryContactPhoneNumber": {
+            "bsonType": "string"
+          },
+          "clientOnboardingDate": {
+            "bsonType": "date"
+          },
+          "lastDocumentVerificationTimestamp": {
+            "bsonType": "date"
+          },
+          "latestVerifiedDocumentType": {
+            "bsonType": "string"
+          },
+          "latestVerifiedDocumentIssueDate": {
+            "bsonType": "date"
+          },
+          "verifiedIncomeAnnualAmount": {
+            "bsonType": "double"
+          },
+          "verifiedTotalAssetsAmount": {
+            "bsonType": "double"
+          },
+          "verifiedTotalLiabilitiesAmount": {
+            "bsonType": "double"
+          },
+          "leasingExposureCurrentAmount": {
+            "bsonType": "double"
+          },
+          "leasingContractsActiveCount": {
+            "bsonType": "int"
+          },
+          "clientProfitabilityScore": {
+            "bsonType": "double"
+          },
+          "riskRatingInternalCode": {
+            "bsonType": "string"
+          },
+          "kycReviewStatus": {
+            "bsonType": "string"
+          },
+          "amlWatchlistScreeningFlag": {
+            "bsonType": "bool"
+          },
+          "dataPrivacyConsentFlag": {
+            "bsonType": "bool"
+          },
+          "relationshipTenureMonths": {
+            "bsonType": "int"
+          },
+          "crossSellEligibilityScore": {
+            "bsonType": "double"
+          },
+          "recordCreationTimestamp": {
+            "bsonType": "date"
+          }
+        }
+      }
+    }
+  },
+  {
+    "collection": "docuVerifyFinanceDataset",
+    "database": "redaktasr",
+    "description": "This client dataset supports leasing operations. Key applications include relationship management, client profitability analysis, business development. The DocuVerify Finance Dataset contains verified",
+    "validator": {
+      "$jsonSchema": {
+        "bsonType": "object",
+        "required": [
+          "clientId",
+          "leasingContractId",
+          "clientSegmentCode",
+          "documentBundleId",
+          "documentVerificationStatus",
+          "clientOnboardingDate",
+          "totalActiveLeasedAssetValue",
+          "gdprConsentFlag"
+        ],
+        "properties": {
+          "clientId": {
+            "bsonType": "string"
+          },
+          "leasingContractId": {
+            "bsonType": "string"
+          },
+          "clientSegmentCode": {
+            "bsonType": "string"
+          },
+          "primaryRelationshipManagerId": {
+            "bsonType": "string"
+          },
+          "documentBundleId": {
+            "bsonType": "string"
+          },
+          "documentVerificationStatus": {
+            "bsonType": "string"
+          },
+          "documentVerificationTimestamp": {
+            "bsonType": "date"
+          },
+          "clientOnboardingDate": {
+            "bsonType": "date"
+          },
+          "lastRelationshipInteractionTimestamp": {
+            "bsonType": "date"
+          },
+          "totalActiveLeasedAssetValue": {
+            "bsonType": "double"
+          },
+          "clientProfitabilityScore": {
+            "bsonType": "double"
+          },
+          "annualLeasingRevenueLocal": {
+            "bsonType": "double"
+          },
+          "clientRiskRating": {
+            "bsonType": "int"
+          },
+          "gdprConsentFlag": {
+            "bsonType": "bool"
+          },
+          "interactionChannelHistory": {
+            "bsonType": "array"
+          },
+          "clientRiskProfileSnapshot": {
+            "bsonType": "object"
+          }
+        }
+      }
+    }
+  },
+  {
+    "collection": "docuVerifyFinanceDataset",
+    "database": "redaktasr",
+    "description": "This client dataset supports leasing operations. Key applications include relationship management, client profitability analysis, business development. The DocuVerify Finance Dataset contains verified",
+    "validator": {
+      "$jsonSchema": {
+        "bsonType": "object",
+        "required": [
+          "clientLeaseId",
+          "clientPartyId",
+          "documentVerificationId",
+          "documentTypeCode",
+          "documentIssueDate",
+          "documentVerificationTimestamp",
+          "documentVerificationStatus",
+          "leaseOutstandingPrincipalAmount",
+          "leaseEffectiveStartDate",
+          "isClientGdprConsented"
+        ],
+        "properties": {
+          "clientLeaseId": {
+            "bsonType": "string"
+          },
+          "clientPartyId": {
+            "bsonType": "string"
+          },
+          "documentVerificationId": {
+            "bsonType": "string"
+          },
+          "documentTypeCode": {
+            "bsonType": "string"
+          },
+          "documentIssueDate": {
+            "bsonType": "date"
+          },
+          "documentVerificationTimestamp": {
+            "bsonType": "date"
+          },
+          "documentVerificationStatus": {
+            "bsonType": "string"
+          },
+          "documentSourceInstitutionName": {
+            "bsonType": "string"
+          },
+          "clientRiskRatingScore": {
+            "bsonType": "double"
+          },
+          "annualVerifiedIncomeAmount": {
+            "bsonType": "double"
+          },
+          "averageMonthlyBankBalance": {
+            "bsonType": "double"
+          },
+          "leaseOutstandingPrincipalAmount": {
+            "bsonType": "double"
+          },
+          "leaseEffectiveStartDate": {
+            "bsonType": "date"
+          },
+          "leaseMaturityDate": {
+            "bsonType": "date"
+          },
+          "isClientGdprConsented": {
+            "bsonType": "bool"
+          },
+          "clientSegmentCode": {
+            "bsonType": "string"
+          },
+          "relationshipManagerId": {
+            "bsonType": "string"
+          },
+          "lastRelationshipContactTimestamp": {
+            "bsonType": "date"
+          },
+          "verifiedFinancialDocumentTypes": {
+            "bsonType": "array"
+          },
+          "clientProfitabilitySummary": {
+            "bsonType": "object"
+          }
+        }
+      }
+    }
+  }
+]

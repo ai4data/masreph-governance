@@ -1,0 +1,98 @@
+{
+  "sql-server": {
+    "description": "Legacy enterprise SQL Server — PascalCase with occasional 'tbl' prefixes",
+    "schema_style": "PascalCase from source system name",
+    "table_style": "PascalCase, some tables prefixed with 'tbl'",
+    "column_style": "PascalCase",
+    "example_schema": "TransactFinance",
+    "example_table": "CustomerTransactionHistory",
+    "example_columns": ["CustomerId", "TransactionDate", "Amount", "StatusCode"],
+    "pk_pattern": "{TableName}Id or Id",
+    "fk_pattern": "{ReferencedTable}Id",
+    "notes": "Legacy systems sometimes have inconsistent naming — some PascalCase, some with underscores. Mix it up slightly for realism."
+  },
+  "postgresql": {
+    "description": "Modern application databases — clean snake_case throughout",
+    "schema_style": "snake_case from source system name",
+    "table_style": "snake_case, plural preferred",
+    "column_style": "snake_case",
+    "example_schema": "salesforce_crm",
+    "example_table": "customer_insights",
+    "example_columns": ["customer_id", "transaction_date", "amount", "status_code"],
+    "pk_pattern": "id or {table}_id",
+    "fk_pattern": "{referenced_table}_id",
+    "notes": "Well-organized, modern conventions. Consistent naming throughout."
+  },
+  "mysql": {
+    "description": "Web/digital application databases — lowercase snake_case, no schemas",
+    "schema_style": "No schemas (or single default schema per app)",
+    "table_style": "snake_case, singular",
+    "column_style": "snake_case",
+    "example_schema": "masreph_digital",
+    "example_table": "web_session",
+    "example_columns": ["session_id", "user_agent", "page_url", "created_at"],
+    "pk_pattern": "id",
+    "fk_pattern": "{referenced_table}_id",
+    "notes": "Simple, flat structure. No deep schema hierarchy."
+  },
+  "snowflake": {
+    "description": "Analytics warehouse — UPPERCASE with star schema patterns",
+    "schema_style": "UPPERCASE analytical layers: RAW, STAGING, ANALYTICS, RISK, COMPLIANCE",
+    "table_style": "UPPERCASE_SNAKE_CASE, prefixed: DIM_, FACT_, STG_ for star schema",
+    "column_style": "UPPERCASE_SNAKE_CASE",
+    "example_schema": "RISK_ANALYTICS",
+    "example_table": "FACT_SANCTION_SCREENING",
+    "example_columns": ["SCREENING_ID", "CUSTOMER_KEY", "RISK_SCORE", "SCREENING_DATE"],
+    "pk_pattern": "{TABLE}_ID or {TABLE}_KEY",
+    "fk_pattern": "{REFERENCED_TABLE}_KEY",
+    "notes": "Star schema: fact tables have FACT_ prefix, dimension tables have DIM_ prefix. Staging tables have STG_ prefix."
+  },
+  "databricks": {
+    "description": "Data lakehouse — medallion architecture with snake_case",
+    "schema_style": "Medallion layers: bronze (raw), silver (cleaned), gold (business)",
+    "table_style": "snake_case, descriptive names",
+    "column_style": "snake_case",
+    "example_schema": "bronze",
+    "example_table": "raw_mosaic_events",
+    "example_columns": ["event_id", "event_type", "payload", "ingested_at"],
+    "pk_pattern": "id or {table}_id",
+    "fk_pattern": "{referenced_table}_id",
+    "notes": "Bronze = raw ingested data (wide, minimal transformation). Silver = cleaned, typed. Gold = business-ready aggregates. Retired/archived datasets go to bronze."
+  },
+  "fabric": {
+    "description": "Corporate BI platform — PascalCase with star schema for reporting",
+    "schema_style": "PascalCase domain names: FinanceReporting, HRAnalytics, ITGovernance",
+    "table_style": "PascalCase, prefixed: Dim, Fact for star schema",
+    "column_style": "PascalCase",
+    "example_schema": "FinanceReporting",
+    "example_table": "FactMonthlyRevenue",
+    "example_columns": ["RevenueId", "BusinessLineKey", "RevenueAmount", "ReportDate"],
+    "pk_pattern": "{Table}Id or {Table}Key",
+    "fk_pattern": "{ReferencedTable}Key",
+    "notes": "Star schema oriented for Power BI consumption. Dimension and fact table pattern."
+  },
+  "oracle": {
+    "description": "Legacy ERP — UPPERCASE, abbreviated names, old-school conventions",
+    "schema_style": "UPPERCASE abbreviated: MASREPH, LEASE_MGMT, FIN_OPS, INS_SYS",
+    "table_style": "UPPERCASE abbreviated, max 30 chars: CUST_MSTR, CNTRCT_DTL, TXN_HDR",
+    "column_style": "UPPERCASE abbreviated: CUST_ID, TXN_DT, AMT, STAT_CD",
+    "example_schema": "LEASE_MGMT",
+    "example_table": "CNTRCT_DTL",
+    "example_columns": ["CNTRCT_ID", "CUST_ID", "START_DT", "END_DT", "STAT_CD"],
+    "pk_pattern": "{ABBREV}_ID",
+    "fk_pattern": "{ABBREV}_ID referencing parent",
+    "notes": "30-char limit on identifiers. Heavy abbreviation. Feels like a 20-year-old ERP. Common abbreviations: MSTR=Master, DTL=Detail, HDR=Header, TXN=Transaction, CNTRCT=Contract, CUST=Customer, ACCT=Account, AMT=Amount, DT=Date, CD=Code, NM=Name, NBR=Number, STAT=Status, ADDR=Address, DESC=Description."
+  },
+  "mongodb": {
+    "description": "Document store — camelCase, nested documents instead of joins",
+    "schema_style": "Database per major domain",
+    "table_style": "camelCase collection names, plural",
+    "column_style": "camelCase field names",
+    "example_schema": "masrephApi",
+    "example_table": "customerProfiles",
+    "example_columns": ["_id", "customerId", "personalInfo.firstName", "addresses[].city"],
+    "pk_pattern": "_id (auto-generated ObjectId)",
+    "fk_pattern": "Embedded documents or {referencedCollection}Id",
+    "notes": "NO table splitting. Instead, embed related data as nested objects/arrays. Design for read patterns, not normalization. Include nested structures where a relational DB would join."
+  }
+}
